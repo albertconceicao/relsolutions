@@ -10,7 +10,7 @@ interface NavLinkProps extends ChakraLinkProps {
 export const NavLink = ({href, children, ...rest}:NavLinkProps) => {
     return (
         <ActiveLink href={`${href}`} passHref>
-            <ChakraLink textDecoration={"none"} p="3" borderRadius={5}  color="white" fontSize={["1.4rem"]} 
+            <ChakraLink textDecoration={"none"} p="3" borderRadius={5}  color="white" fontSize={["1rem"]} 
              _hover={{
             textDecoration: "none",
             bg: "orange.800",
