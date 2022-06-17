@@ -3,7 +3,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 export const WhatsApp = () => {
     return (
-        <Link href="https://wa.me/5571996850880?text=Eu desejo saber mais sobre esse serviço" 
+        <Link href="https://wa.me/5571993364034?text=Olá, desejo saber mais sobre esse serviço que vi no site" 
         _hover={{
             textDecoration: "none",
         }}
