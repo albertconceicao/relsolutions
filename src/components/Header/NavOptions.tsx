@@ -1,22 +1,16 @@
-import { Flex, } from "@chakra-ui/react";
+import { Flex, HStack, Link as ChakraLink } from "@chakra-ui/react";
+import { NavLink } from "./NavLink";
+
 
 export const NavOptions = () => {
     return (
         <Flex>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/contacts">Contatos</a>
-                </li>
-                <li>
-                    <a href="/info">Quem somos</a>
-                </li>
-                <li>
-                    <a href="/services">Serviços</a>
-                </li>
-            </ul>
+            <HStack display="inline-block" spacing="6">
+                <NavLink href="/">Home</NavLink>
+                <NavLink href="/contact">Contato</NavLink>
+                <NavLink href="/info">Quem somos</NavLink>
+                <NavLink href="/services" >Serviços</NavLink>
+            </HStack>
         </Flex>
     );
 }
