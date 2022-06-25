@@ -3,7 +3,7 @@ import { BoxContent } from "../components/BoxContent";
 
 export default function Services() {
     return (
-        <Flex direction="column"  mt="-80px" justify="center" >
+        <Flex direction="column"  mt="-170px" justify="center" >
 
             <Stack spacing="8" mx="auto" >
                 <BoxContent width="900px" height="300px">

@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, useBreakpointValue } from "@chakra-ui/react";
 import { ReactElement } from "react";
 
 interface BoxContentProps {
@@ -8,9 +8,23 @@ interface BoxContentProps {
 }
 
 export const BoxContent = ({width,height, children }: BoxContentProps) => {
-    return (
-        <Box maxWidth={`${width}`} maxH={`${height}`} mx="auto" textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" p="6" m="4">
-            {children}
-        </Box>
-    );
+    const isWideVersion = useBreakpointValue({
+        base: false,
+        md: true,
+    })
+    
+        if(isWideVersion) {
+            return (
+                <Box maxWidth={`${width}`} maxH={`${height}`} mx="auto" textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" p="4" >
+                    {children}
+                </Box>
+            );
+        } else {
+            return (
+            <Box maxWidth={`${width}`} maxH={`${height}`} textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" m="4" p="4" >
+                {children}
+            </Box>
+            );
+        }
+    
 }

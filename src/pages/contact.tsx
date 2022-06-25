@@ -3,11 +3,11 @@ import { BoxContent } from "../components/BoxContent";
 
 export default function Contact () {
     return (
-        <Flex direction="column"  mt="-80px" justify="center" >
+        <Flex direction="column"  mt="-150px" justify="center" >
 
             <Stack spacing="8" mx="auto" >
                 <BoxContent width="600px" height="350px">
-                    <Box>
+                    <Box p="4">
                         <Text as="h2" fontSize="1.4rem" fontWeight={"500"}>Solicite um orçamento</Text>
                         <FormControl maxW="400px" mx="auto" mt="4">
                             <Stack spacing="6">

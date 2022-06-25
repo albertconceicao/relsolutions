@@ -4,16 +4,15 @@ import { Video } from "../components/Video";
 
 export default function Home() {
   return (
-    <>
-      <Box mb="8" mt="-80px">
-        <BoxContent width="900px" height="200px">
-          <Text as="h2">
-            Introdução do site
-          </Text>
-        </BoxContent>
-      </Box>
+    <Flex direction="column" justify="center" mx="auto" maxWidth={1400} mt="-150px">
+      
+      <BoxContent width="900px" height="200px">
+        <Text mx="auto" as="h2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugiat corporis tempora ducimus eius possimus quaerat modi odio neque magnam aperiam illum, numquam unde nesciunt voluptates reprehenderit, suscipit explicabo totam!
+        </Text>
+      </BoxContent>
       <Video />
-    </>
+    </Flex>
     
   )
 }
