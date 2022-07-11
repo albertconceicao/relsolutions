@@ -11,11 +11,11 @@ export const NavLink = ({href, children, ...rest}:NavLinkProps) => {
     
     return (
         <ActiveLink href={`${href}`} passHref>
-            <ChakraLink textDecoration={"none"} p={["1","3"]} borderRadius={5}  color="white" fontSize={["0.8rem","1rem"]} 
+            <ChakraLink textDecoration={"none"} p={["1","3"]} borderRadius={5}  color="white" fontSize={["0.8rem","1.3rem"]} 
              _hover={{
             textDecoration: "none",
             bg: "orange.800",
-            }} fontWeight="400" {...rest}
+            }} fontWeight="500" {...rest}
             >
                 {children}
             </ChakraLink>
