@@ -4,7 +4,7 @@ const email = "contato@relsolutions.com.br";
 const emailPass = "Contato2022.";
 
 const transporter = nodemailer.createTransport({
-    host: "smtp.relsolutions.com.br",
+    host: "smtp.https://relsolutions.vercel.app/.com.br",
     port: 587,
     auth: {
         type: "login",
