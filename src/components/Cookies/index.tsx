@@ -10,7 +10,6 @@ export const Cookies = () => {
         style={{ background: "#ED7526", opacity: "0.8"}}
         buttonStyle={{ color: "white", fontSize: "1.1rem", background: "#424141", marginRight: "8rem" }}
         expires={1}
-        debug={true}
         >
             <Text fontSize="1.3rem">Este website utiliza cookies para melhorar sua experiência.{" "}</Text>
         </CookieConsent>
