@@ -20,29 +20,26 @@ export default function Contact () {
         e.preventDefault();
         
         try {
-            await sendContactMail(name, email, message);
+            if (name === '' || email === '' || number === '' || message === '') {
+              toast.error('Todos os campos precisam ser preenchidos');
+              return;
+            }
+            await sendContactMail(name, email, message, number);
             setName('');
             setEmail('');
             setMessage('');
-            toast('Email enviado com sucesso', {
-                autoClose: 2000,
-                style: {
-                    background: '#f5b489',
-                    color: 'black',
-                },
+            toast.success('Email enviado com sucesso');
+            // toast('Email enviado com sucesso', {
+            //     autoClose: 2000,
+            //     style: {
+            //         background: '#f5b489',
+            //         color: 'black',
+            //     },
                 
-            });
+            // });
         } catch (error) {
             toast.error('Ocorreu um erro ao tentar enviar sua solicitação');
         }
-        // emailjs.sendForm('service_yvfnnxn', 'template_sjnea8k', e.target, 'Rkzlq7jnBW2pR_bNG')
-        //   .then((result) => {
-        //       console.log(result.text);
-              
-        //   }, (error) => {
-        //       console.log(error.text);
-        //   });
-        //   e.target.reset();
     };
     return (
 
@@ -97,19 +94,6 @@ export default function Contact () {
                             </Stack>
                         </FormControl>
                     </Box>
-                    {/* <form action="https://public.herotofu.com/v1/f3817be0-f662-11ec-bc36-e1ea9ccadd33" method="post">
-                        <div>
-                            <label htmlFor="name">Your Name</label>
-                            <input name="Name" id="name" type="text" required />
-                        </div>
-                        <div>
-                            <label htmlFor="email">Your Email</label>
-                            <input name="Email" id="email" type="email" required  />
-                        </div>
-                        <div>
-                            <input type="submit" value="Download CTA" />
-                        </div>
-                    </form> */}
                 </BoxContent>
             </Stack>
             <ToastContainer />
