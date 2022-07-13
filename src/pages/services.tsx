@@ -3,11 +3,11 @@ import { BoxContent } from "../components/BoxContent";
 
 export default function Services() {
     return (
-        <Flex direction="column"  mt="-170px" justify="center" >
+        <Flex direction="column"  bg="gray.300" h="85vh" >
 
-            <Stack spacing="8" mx="auto" >
+            <Stack spacing="8" mx="auto" mt="40px" >
                 {/* <BoxContent width="900px" height="300px">
-                    <Box>
+                  s  <Box>
                         <Text as="h2" fontSize="1.6rem" fontWeight={"500"}>Limpeza de placas solar</Text>
                         <Text textAlign={["justify"]} p="8" color="gray.500" fontSize="1.1rem">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae exercitationem dolorem fugiat itaque vitae a ex harum, quasi neque, atque soluta tenetur, quae eum. Sequi neque est quasi vel beatae!

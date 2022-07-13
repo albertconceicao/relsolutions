@@ -44,7 +44,7 @@ export default function Contact () {
     return (
 
         
-        <Flex direction="column"  mt="-150px" justify="center" >
+        <Flex direction="column"  bg="gray.300" h="85vh" >
 
             <Stack spacing="8" mx="auto" >
                 <BoxContent width="600px" height="580px">

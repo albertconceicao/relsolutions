@@ -4,7 +4,7 @@ import { Video } from "../components/Video";
 
 export default function Home() {
   return (
-    <Flex direction="column" justify="center" mx="auto" maxWidth={1400} mt="-150px">
+    <Flex direction="column" mx="auto" maxWidth={1400} bg="gray.300" h="85vh">
       
       <BoxContent width="900px" height="200px">
         <Text mx="auto" as="h2">

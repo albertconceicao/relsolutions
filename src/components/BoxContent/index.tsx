@@ -15,13 +15,13 @@ export const BoxContent = ({width,height, children }: BoxContentProps) => {
     
         if(isWideVersion) {
             return (
-                <Box maxWidth={`${width}`} maxH={`${height}`} mx="auto" textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" p="4" >
+                <Box maxWidth={`${width}`} maxH={`${height}`} mx="auto" textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" p="4" mt="40px" >
                     {children}
                 </Box>
             );
         } else {
             return (
-            <Box maxWidth={`${width}`} maxH={`${height}`} textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" m="4" p="4" >
+            <Box maxWidth={`${width}`} maxH={`${height}`} textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" m="4" p="4" mt="40px">
                 {children}
             </Box>
             );

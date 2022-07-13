@@ -13,7 +13,7 @@ export default function Info () {
     {if(!isWideVersion) {
         return (
            
-            <Flex direction={["column","column","row","row"]} mt="-100px" pl={["4","6","8","10"]} pr={["4","6","8","10"]} maxWidth={1400} mx="auto" justify={"center"}>
+            <Flex direction={["column","column","row","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} maxWidth={1400} mx="auto" justify={"center"} bg="gray.300">
     
                     
                     <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["fit-content"]} mx="auto" textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" p="4" m="4" alignSelf="center">
@@ -51,10 +51,10 @@ export default function Info () {
         );
     } else {
         return (
-            <Flex direction={["column","column","row","row"]} mt="-100px" pl={["4","6","8","10"]} pr={["4","6","8","10"]} maxWidth={1400} mx="auto" justify={"center"}>
+            <Flex direction={["column","column","row","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} maxWidth={1400} mx="auto" justify={"center"} h="85vh" bg="gray.300">
     
                     
-                <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["fit-content"]} mx="auto" textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" p="4" m="4" >
+                <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["fit-content"]} mx="auto" textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" p="4" m="4" mt="40px">
                 <Flex>
                     <Icon as={GiFlyingTarget} />
                     <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.6rem"]} fontWeight={"500"}>Missão</Text>
@@ -65,7 +65,7 @@ export default function Info () {
                 </Box>
             
             
-                <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["320px"]} mx="auto" textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" p="4" m="4" >
+                <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["320px"]} mx="auto" textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" p="4" m="4" mt="40px">
                     <Text as="h2" fontSize="1.6rem" fontWeight={"500"}>Visão</Text>
                     <Text as="p" p="8" color="gray.500" fontSize="1.1rem">
                         Oferecer  soluções tecnológicas agregadas aos nossos serviços.
@@ -74,6 +74,7 @@ export default function Info () {
             
             
                 <Box width={["230px", "250px", "280px", "310px", "350px"]} height="fit-content" mx="auto" textAlign={"center"} bg="gray.200" boxShadow={["2xl"]} borderRadius="10px" p="4" m="4" 
+                mt="40px"
                 >
                     <Text as="h2" fontSize="1.6rem" fontWeight={"500"}>Valores</Text>
                     <UnorderedList textAlign={["justify"]} p="8" color="gray.500" fontSize="1.1rem">

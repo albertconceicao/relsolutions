@@ -19,7 +19,7 @@ export const ActiveLink = ({children, ...rest}: ActiveLinkProps) => {
         <Link {...rest}>
             {cloneElement(children, {
                 // color: isActive ? 'yellow.400' : 'white',
-                bg: isActive ? 'orange.800' : 'none'
+                bg: isActive ? 'gray.300' : 'none'
             })}
         </Link>
     );
