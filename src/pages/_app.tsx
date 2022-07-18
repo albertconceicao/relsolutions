@@ -3,6 +3,7 @@ import { Header } from '../components/Header';
 import { WhatsApp } from '../components/WhatsApp';
 import { theme } from '../styles/theme';
 import { Cookies } from '../components/Cookies';
+import { Footer } from '../components/Footer';
 
 
 function MyApp({ Component, pageProps }) {
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <WhatsApp />
       <Cookies />
+      <Footer />
     </ChakraProvider>
   );
 }

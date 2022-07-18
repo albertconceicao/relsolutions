@@ -15,25 +15,25 @@ export const Header = () => {
 
     if(isDrawerHeader) {
         return (
-            <Box bg="white" h="130px" >
+            <Box bg="white" h="110px" >
     
                 <Flex
                     as="header"
                     w="100%"
                     maxWidth={1080}
-                    h="40"
+                    h="17vh"
                     mx="auto"
                     px="6"
                     align="center"
-                    justify="space-around"            >
+                    justify="space-between"            >
                         <Button colorScheme={'orange'} onClick={onOpen}>
-                        <Icon as={GiHamburgerMenu} />
+                            <Icon as={GiHamburgerMenu} />
                         </Button>
-                        <Logo />
-                        <Flex
+                        <Logo height="75px" width="75px"/>
+                        {/* <Flex
                         >
                             <SocialMedia />
-                        </Flex>
+                        </Flex> */}
                     </Flex>
                 <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
                     <DrawerOverlay />
@@ -60,7 +60,7 @@ export const Header = () => {
                 px="6"
                 align="center"
                 justify="space-between"            >
-                    <Logo />
+                    <Logo height="100px" width="100px"/>
                     <Flex>
     
                         <NavOptions />

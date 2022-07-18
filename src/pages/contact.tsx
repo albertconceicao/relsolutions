@@ -44,9 +44,9 @@ export default function Contact () {
     return (
 
         
-        <Flex direction="column"  bg="gray.300" h="85vh" >
+        <Flex bg="gray.300" >
 
-            <Stack spacing="8" mx="auto" >
+            <Stack spacing="8" mx="auto" mb="40px" >
                 <BoxContent width="600px" height="580px">
                     <Box p="4" as="form" onSubmit={handleSubmitEmail} >
                         <Text as="h2" fontSize="1.4rem" fontWeight={"500"}>Solicite um orçamento</Text>

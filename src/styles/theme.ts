@@ -8,5 +8,9 @@ export const theme = extendTheme({
         gray: {
             "700": "#424141"
         }
+    },
+    fonts: {
+        heading: `'Coolvetica', sans-serif`,
+        body: `'Coolvetica', sans-serif`
     }
 })

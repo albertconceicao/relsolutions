@@ -3,9 +3,9 @@ import { BoxContent } from "../components/BoxContent";
 
 export default function Services() {
     return (
-        <Flex direction="column"  bg="gray.300" h="85vh" >
+        <Flex direction="column"  bg="gray.300" >
 
-            <Stack spacing="8" mx="auto" mt="40px" >
+            <Stack spacing="8" mx="auto" my="40px" >
                 {/* <BoxContent width="900px" height="300px">
                   s  <Box>
                         <Text as="h2" fontSize="1.6rem" fontWeight={"500"}>Limpeza de placas solar</Text>
