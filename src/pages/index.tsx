@@ -1,4 +1,4 @@
-import { Box, Button, Flex, FormControl, FormLabel, Icon, Image, Input, ListItem, SimpleGrid, Stack, Text, Textarea, UnorderedList } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, FormLabel, Icon, Image, Input, ListItem, Modal, ModalContent, ModalOverlay, SimpleGrid, Stack, Text, Textarea, UnorderedList, useDisclosure } from "@chakra-ui/react";
 import { BoxContent } from "../components/BoxContent";
 import { FaSolarPanel, FaTools } from 'react-icons/fa';
 
@@ -29,6 +29,7 @@ import { toast, ToastContainer } from "react-toastify";
 
 export default function Home() {
 
+  const { isOpen, onOpen, onClose } = useDisclosure()
   const [name, setName] = useState('');
     const [number, setNumber] = useState('');
     const [email, setEmail] = useState('');
@@ -63,8 +64,10 @@ export default function Home() {
   return (
     <Flex direction="column" mx="auto" bg="gray.400">
       
-      <Box mx="auto" maxW={1480} w="100%" >
-        <Swiper
+      <Box mx="auto" maxW={1480} w="100%" bgImage="url('/robot-1.png')" bgRepeat="no-repeat" bgSize="cover"
+      opacity={1}
+      >
+        {/* <Swiper
         modules={[Navigation, Autoplay, Pagination, Lazy]}
         spaceBetween={50}
         slidesPerView={1}
@@ -83,7 +86,7 @@ export default function Home() {
         lazy={true}
         >
           <SwiperSlide>
-            <Image src="./robot-1.png" w="100%" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
+            <Image src="./robot-1.png" w="100%" alt="Imagem do Robô da RelSolutions limpando placas solares" opacity={0.5}/>
           </SwiperSlide>
           <SwiperSlide>
             <Image src="./robot-2.png" w="100%" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
@@ -92,21 +95,43 @@ export default function Home() {
             <Image src="./robot-3.png" w="100%" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
           </SwiperSlide>
         
-        </Swiper>
-      </Box>
-      <SimpleGrid columns={2} minChildWidth="450px" mx="auto" bg="white" m="4" borderRadius={10} p="5" maxH="500px" boxShadow="lg">
+        </Swiper> */}
+        <SimpleGrid columns={2} mx="auto" m="4" borderRadius={10} p="5" maxH="500px" boxShadow="lg" spacing={5}
+        opacity={1}
+        >
         {/* <BoxContent width="800px" height="300px">
         </BoxContent> */}
-          <Box as="h2" my="auto" ml="40px" boxShadow={["none"]}>
-            <Text as="h1" w="600px" h="120px"fontSize="3.2rem" fontWeight="bold" textAlign="left">
+          <Box as="h2" my="auto" ml="40px" boxShadow={["none"]} h="600px">
+            <Text as="h1" w="100%" fontSize="3rem" fontWeight="bold" textAlign="left" color="white" h="200px">
               Automatize sua limpeza
             </Text>
-            <Text as="p"  textAlign="justify" mt="1rem" fontSize="1.2rem"> 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugiat corporis tempora ducimus eius possimus quaerat modi odio neque magnam aperiam illum, numquam unde nesciunt voluptates reprehenderit, suscipit explicabo totam!
-            </Text>
+            {/* <Text as="p"  textAlign="justify" mt="1rem" fontSize="1.2rem" color="white" h="250px"> 
+              A RelSolutions apresenta uma solução que atende as necessidades de uma limpeza eficaz, rápida e segura para suas placas solares.
+            </Text> */}
+
+            
           </Box>
-        <Video />
+          <Box w="100%" my="auto" h="580px">
+            <Text as="p"  textAlign="justify" mt="1rem" fontSize="1.4rem" color="white"  w="80%" ml="auto" fontWeight="bold"> 
+              A RelSolutions apresenta uma solução que atende as necessidades de uma limpeza eficaz, rápida e segura para suas placas solares.
+            </Text>
+            <Box mx="7rem" mt="1rem" >
+              <Button bg="orange.500" color="white" textAlign="right" onClick={onOpen}
+              _hover={{
+                bg: "orange.600"
+              }}
+              >Ver vídeo</Button>
+            </Box>  
+            <Modal isOpen={isOpen} onClose={onClose} isCentered>
+              <ModalOverlay />
+              <ModalContent  bg="none">
+                <Video />
+              </ModalContent>
+            </Modal>
+          </Box>
       </SimpleGrid>
+      </Box>
+      
 
       <Text mx="auto" my="2rem" fontSize="2rem" fontWeight="bold">Serviços</Text>
 
