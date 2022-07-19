@@ -59,7 +59,8 @@ export const Header = () => {
                 mx="auto"
                 px="6"
                 align="center"
-                justify="space-between"            >
+                justify="space-between"            
+                >
                     <Logo height="100px" width="100px"/>
                     <Flex>
     

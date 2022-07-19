@@ -15,7 +15,7 @@ export const NavLink = ({href, children, ...rest}:NavLinkProps) => {
              _hover={{
             textDecoration: "none",
             bg: "gray.300",
-            }} fontWeight="500" {...rest}
+            }} fontWeight="semibold" {...rest}
             >
                 {children}
             </ChakraLink>
