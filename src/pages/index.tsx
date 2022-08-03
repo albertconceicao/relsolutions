@@ -148,7 +148,7 @@ export default function Home() {
                   }}
                   >Ver vídeo</Button>
                 </Box>  
-                <Modal isOpen={isOpen} onClose={onClose} isCentered>
+                <Modal isOpen={isOpen} size="lg" onClose={onClose} isCentered>
                   <ModalOverlay />
                   <ModalContent  bg="none">
                     <Video />

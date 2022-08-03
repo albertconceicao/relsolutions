@@ -1,11 +1,25 @@
-import { Box, Text, AspectRatio } from "@chakra-ui/react";
+import { Box, Text, AspectRatio, useBreakpointValue } from "@chakra-ui/react";
 
 
 export const Video = () => {
-    return (
-        <AspectRatio w={["270px","450px","500px","600px"]} maxW={"600px"} maxH="600px" mx="auto"borderRadius="10px" my="4" >
-            {/* <Text>Vídeo</Text> */}
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SQQYS23XRK8" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        </AspectRatio>
-    );
+    const isMobileVersion = useBreakpointValue({
+        base: true, 
+        md: false,
+    })
+    if (isMobileVersion) {
+
+        return (
+            
+            <AspectRatio w={["270px","450px","500px","600px"]} mx="auto"  maxW={"600px"} maxH="600px" borderRadius="10px" my="4" >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SQQYS23XRK8" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </AspectRatio>
+        );
+    } else {
+        return (
+            
+            <AspectRatio w={["270px","450px","500px","600px"]} mx="-20" maxW={"600px"} maxH="600px" borderRadius="10px" my="4" >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SQQYS23XRK8" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </AspectRatio>
+        );
+    }
 }
