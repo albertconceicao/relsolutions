@@ -7,10 +7,10 @@ export const Footer = () => {
     return (
         <Box boxShadow={["inner"]}>
 
-            <Flex direction={["column","row","row","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto" justify={"space-evenly"} bg="white" fontWeight={"400"} mt="1rem" >
+            <Flex direction={["column","column","row","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto" justify={"space-evenly"} bg="white" fontWeight={"400"} mt="1rem" >
                 
                 <Flex direction={"column"} mb="1.2rem" >
-                    <Flex justify="space-between" borderBottom={"1px solid"} borderBottomColor="gray.300" color="orange.600" fontSize={"1.3rem"} mb="1.2rem" >
+                    <Flex justify="space-between" borderBottom={"1px solid"} borderBottomColor="gray.300" color="orange.600" fontSize={["1rem","1.1rem","1.2rem"]} mb="1.2rem" >
                         <Text as="h3" fontWeight="600" >Redes sociais</Text>
                         <Icon as={BsPeopleFill} mt="0.3rem" ml="0.5rem"/>
                     </Flex>
@@ -45,7 +45,7 @@ export const Footer = () => {
                 </Flex>
                 <Flex direction={"column"} textTransform={"capitalize"} mb="1rem">
                     <Flex justify="space-between" borderBottom={"1px solid"} borderBottomColor="gray.300" color="orange.600" mb="1.2rem" >
-                        <Text as="h3" fontSize={"1.3rem"} fontWeight="600">Endereço</Text>
+                        <Text as="h3" fontSize={["1rem","1.1rem","1.2rem"]}fontWeight="600">Endereço</Text>
                         <Icon as={RiHome3Fill} mt="0.5rem" ml="0.5rem"/>
                     </Flex>
                     <Text fontWeight={"bold"}>contato: (11) 9931-9591</Text>
@@ -55,7 +55,7 @@ export const Footer = () => {
                 </Flex>
                 <Flex direction={"column"} textTransform={"capitalize"} mb="1rem">
                     <Flex justify="space-between" borderBottom={"1px solid"} borderBottomColor="gray.300" color="orange.600" mb="1.2rem">
-                        <Text as="h3"  fontSize={"1.3rem"} fontWeight="600" >Contato</Text>
+                        <Text as="h3"  fontSize={["1rem","1.1rem","1.2rem"]} fontWeight="600" >Contato</Text>
                         <Icon as={RiPhoneFill} mt="0.5rem" ml="0.5rem"/>
                     </Flex>
                     <Text fontWeight={"bold"}>contato: (11) 9931-9591</Text>
@@ -63,7 +63,7 @@ export const Footer = () => {
                 </Flex>
                 <Flex direction={"column"} textTransform={"capitalize"} mb="1rem">
                     <Flex justify="space-between" borderBottom={"1px solid"} borderBottomColor="gray.300" color="orange.600" mb="1.2rem" >
-                        <Text as="h3" fontSize={"1.3rem"} fontWeight="600" >RelSolutions</Text>
+                        <Text as="h3" fontSize={["1rem","1.1rem","1.2rem"]} fontWeight="600" >REL Solutions</Text>
                         <Icon as={RiBuilding4Fill} mt="0.5rem" ml="0.5rem"/>
                     </Flex>
                     <Text fontWeight={"bold"}>CNPJ - 44.435.919/0001-83</Text>

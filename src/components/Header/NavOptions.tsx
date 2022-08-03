@@ -8,8 +8,8 @@ export const NavOptions = () => {
             <HStack display="inline-block" spacing="6">
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/info">Quem somos</NavLink>
-                <NavLink href="/services" >Serviços</NavLink>
-                <NavLink href="/contact">Contato</NavLink>
+                {/* <NavLink href="/services" >Serviços</NavLink> */}
+                {/* <NavLink href="/contact">Contato</NavLink> */}
             </HStack>
         </Flex>
     );

@@ -1,4 +1,5 @@
 import { Image } from "@chakra-ui/react";
+import Link from "next/link";
 
 interface LogoProps {
     height: string;
@@ -7,6 +8,8 @@ interface LogoProps {
 
 export const Logo = ({height, width}: LogoProps) => {
     return (
-        <Image borderRadius={[50]} src="/logo.jpeg" alt="logo" width={`${width}`} height={`${height}`} />
+        <Link href="/">
+            <Image borderRadius={[50]} src="/logo-2.jpg" alt="logo" width={`${width}`} height={`${height}`} cursor="pointer"/>
+        </Link>
     );
 }

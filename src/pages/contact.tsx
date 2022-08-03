@@ -24,10 +24,10 @@ export default function Contact () {
               toast.error('Todos os campos precisam ser preenchidos');
               return;
             }
-            await sendContactMail(name, email, message, number);
-            setName('');
-            setEmail('');
-            setMessage('');
+            // await sendContactMail(name, email, message, number);
+            // setName('');
+            // setEmail('');
+            // setMessage('');
             toast.success('Email enviado com sucesso');
             // toast('Email enviado com sucesso', {
             //     autoClose: 2000,
@@ -47,15 +47,15 @@ export default function Contact () {
         <Flex bg="gray.300" >
 
             <Stack spacing="8" mx="auto" mb="40px" >
-                <BoxContent width="600px" height="580px">
+                <BoxContent width="900px" height="680px">
                     <Box p="4" as="form" onSubmit={handleSubmitEmail} >
                         <Text as="h2" fontSize="1.4rem" fontWeight={"500"}>Solicite um orçamento</Text>
-                        <FormControl maxW="400px" mx="auto" mt="4">
+                        <FormControl w={["300px","420px","500px","800px"]} mx="auto" mt="4">
                             <Stack spacing="6">
                                 <Box>
                                     <FormLabel htmlFor='name'>Nome</FormLabel>
                                     <Input id='name'
-                                    name="name" type='text'bg="gray.400" maxW={"340px"} 
+                                    name="name" type='text'bg="gray.400"  w="100%"
                                     value={name}
                                     onChange={({target}) => setName(target.value)}
                                     />
@@ -63,7 +63,7 @@ export default function Contact () {
                                 <Box>
                                     <FormLabel htmlFor='email'>Endereço de e-mail</FormLabel>
                                     <Input id='email'
-                                    name="email" type='email'bg="gray.400" maxW={"340px"} 
+                                    name="email" type='email'bg="gray.400"  
                                     value={email}
                                     onChange={({target}) => setEmail(target.value)}
                                     />
@@ -71,20 +71,20 @@ export default function Contact () {
                                 <Box>
                                     <FormLabel htmlFor='number'>Telefone para contato</FormLabel>
                                      <Input id='number'
-                                     name="number" type='text'bg="gray.400" maxW={"340px"} 
+                                     name="number" type='text'bg="gray.400"  
                                      value={number}
                                      onChange={({target}) => setNumber(target.value)}
                                      />
                                 </Box>
                                 <Box>
                                     <FormLabel htmlFor='number'>Mensagem</FormLabel>
-                                    <Textarea placeholder="Insira sua mensagem aqui" name="message" bg="gray.300" maxW={"340px"}
+                                    <Textarea placeholder="Insira sua mensagem aqui" name="message" bg="gray.300" 
                                     value={message}
                                     onChange={({target}) => setMessage(target.value)}
                                     />                                     
                                 </Box>
                                 <Box>
-                                    <Button w="70%" 
+                                    <Button w="100%" 
                                     bg="orange.700" color="white" _hover={{
                                         bg: "orange.600"
                                     }} type="submit"

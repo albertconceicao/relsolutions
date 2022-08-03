@@ -21,7 +21,7 @@ export const Header = () => {
                     as="header"
                     w="100%"
                     maxWidth={1080}
-                    h="17vh"
+                    h="32"
                     mx="auto"
                     px="6"
                     align="center"
