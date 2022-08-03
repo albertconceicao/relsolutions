@@ -4,6 +4,7 @@ import { NavOptions } from "./NavOptions";
 import { SocialMedia } from "./SocialMedia";
 import { GiHamburgerMenu } from 'react-icons/gi';
 
+
 export const Header = () => {
 
     const {onClose, onOpen, isOpen} = useDisclosure();

@@ -1,7 +1,7 @@
-import { Box, Button, Flex, FormControl, FormLabel, Icon, Image, Input, ListItem, Modal, ModalContent, ModalOverlay, SimpleGrid, Stack, Text, Textarea, UnorderedList, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, FormLabel, Icon, Input, ListItem, Modal, ModalContent, ModalOverlay, SimpleGrid, Stack, Text, Textarea, UnorderedList, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
 import { BoxContent } from "../components/BoxContent";
 import Head from 'next/head';
-
+import Image from 'next/image';
 import { BsPhoneFill, BsFillShieldFill, BsBatteryCharging } from 'react-icons/bs';
 
 import { Video } from "../components/Video";
@@ -33,6 +33,7 @@ import { toast, ToastContainer } from "react-toastify";
 
 
 export default function Home() {
+  // const backgroundImage = <Image src="/robot-1.png"/>;
 
     const isMobileVersion = useBreakpointValue({
       base: true,
