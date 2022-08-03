@@ -68,7 +68,7 @@ export default function Home() {
       <Head>
         <title>REL Solutions - Página Inicial</title>
         <meta name="description" content="Limpeza eficiente e controlada de placas solares com baixo custo e alto rendimento."/>
-        <meta name="keywords" content="relsolutions,limpeza solar, painel solar, limpeza de painel solar"></meta>
+        <meta name="keywords" content="relsolutions, limpeza solar, painel solar, limpeza de painel solar, limpeza de placas, limpeza de placas solares, placas solares"/>
       </Head>
       <Flex direction="column" mx="auto" bg="gray.400" bgGradient="linear(to-b, orange.300, orange.700)">
         

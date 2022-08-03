@@ -20,7 +20,7 @@ export default function Info () {
                 <Head>
                     <title>REL Solutions - Quem Somos</title>
                     <meta name="description" content="Limpeza eficiente e controlada de placas solares com baixo custo e alto rendimento."/>
-                    <meta name="keywords" content="limpeza solar, painel solar, limpeza de painel solar"></meta>
+                    <meta name="keywords" content="relsolutions, limpeza solar, painel solar, limpeza de painel solar, limpeza de placas, limpeza de placas solares, placas solares"/>
                 </Head>
                 <Flex direction={["column","column","row","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto" justify={"center"} bgGradient="linear(to-b, orange.300, orange.700)">
         
@@ -207,7 +207,7 @@ export default function Info () {
                 <Head>
                     <title>REL Solutions - Quem Somos</title>
                     <meta name="description" content="Limpeza eficiente e controlada de placas solares com baixo custo e alto rendimento."/>
-                    <meta name="keywords" content="relsolutions,limpeza solar, painel solar, limpeza de painel solar"></meta>
+                    <meta name="keywords" content="relsolutions, limpeza solar, painel solar, limpeza de painel solar, limpeza de placas, limpeza de placas solares, placas solares"/>
                 </Head>
 
                 <Flex direction="column" pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto"  bgGradient="linear(to-b, orange.300, orange.700)">
