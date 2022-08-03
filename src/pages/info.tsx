@@ -203,8 +203,8 @@ export default function Info () {
                     <Text my="2rem" fontSize="2.5rem" fontWeight="bold" textAlign="center" color="white">Quem somos?</Text>
 
                         <Text textAlign="justify" color="white" maxW="900px" mx="auto" fontSize={["1.2rem"]} fontWeight="bold" >
-                            A REL Solutions  representa a inovação em limpeza, operação, manutenção e instalação de painéis fotovoltaicos. Nosso principal objetivo é promover soluções tecnológicas, através da limpeza automatizada dos painéis, e demais serviços, atendendo de forma rápida, prática, segura e eficaz.
-                            Desenvolvemos uma forma independente de limpeza de placas solares que atendem grande parte das usinas fotovoltaicas, com agilidade, eficiência , e principalmente, com baixos custos.
+                            A REL Solutions  representa a inovação em limpeza, operação, manutenção e instalação de painéis fotovoltaicos. <br /> <br /> Nosso principal objetivo é promover soluções tecnológicas, através da limpeza automatizada dos painéis, e demais serviços, atendendo de forma rápida, prática, segura e eficaz. <br /> <br />
+                            Desenvolvemos uma forma independente de limpeza de placas solares que atendem grande parte das usinas fotovoltaicas, com agilidade, eficiência , e principalmente, com baixos custos. <br /> <br />
                             Temos como principal objetivo oferecer soluções com alta tecnologia na área de usinas solares.
                         </Text>
                     
