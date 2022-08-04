@@ -31,7 +31,8 @@ export const NavLink = ({href, children, ...rest}:NavLinkProps) => {
                 <ChakraLink textDecoration={"none"} p={["1","3"]} borderRadius={5}  fontSize={["0.8rem","1.3rem"]} 
                  _hover={{
                 textDecoration: "none",
-                bg: "gray.300",
+                bg: "orange.500",
+                color: "white",
                 }} fontWeight="semibold" {...rest}
                 >
                     {children}
