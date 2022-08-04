@@ -182,7 +182,7 @@ export default function Home() {
 
         <Box mx="auto">
           <Text textAlign="center" fontSize={["1.2rem"]} color="white" fontWeight="bold">
-            Nosso robô é de fácil montagem, alto rendimento de limpeza.
+            Nosso robô é de fácil montagem e alto rendimento de limpeza.
           </Text>
 
           <Flex direction={["column","column","column","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto" justify={"center"} >
