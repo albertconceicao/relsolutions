@@ -70,7 +70,7 @@ export default function Home() {
         <title>REL Solutions - Página Inicial</title>
         <meta name="google-site-verification" content="3POAaN6syVqox0KfFC09ZsW7A0j64sTI8XIA13MxEVE" />
         <meta name="description" content="Limpeza eficiente e controlada de placas solares com baixo custo e alto rendimento."/>
-        <meta name="keywords" content="REL solutions, limpeza solar, painel solar, limpeza de painel solar, limpeza de placas, limpeza de placas solares, placas solares"/>
+        <meta name="keywords" content="REL solutions, rel solutions, limpeza solar, painel solar, limpeza de painel solar, limpeza de placas, limpeza de placas solares, placas solares"/>
         <link rel="icon" type="image/jpg" href="/logo-2.jpg"/>
       </Head>
       <Flex direction="column" mx="auto" bg="gray.400" bgGradient="linear(to-b, orange.300, orange.700)">
