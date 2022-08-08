@@ -122,7 +122,7 @@ export default function Home() {
               </Box>
               <Box w="100%" my="auto" h="580px">
                 <Text as="p"  textAlign={["left", "justify"]} mt="1rem" fontSize={["1rem","1.4rem","1.4rem"]}   w="80%" ml="auto" fontWeight="bold"> 
-                  A RelSolutions apresenta uma solução que atende as necessidades de uma limpeza eficaz, rápida e segura para suas placas solares.
+                  A REL Solutions apresenta uma solução que atende as necessidades de uma limpeza eficaz, rápida e segura para suas placas solares.
                 </Text>
                 <Box mx={["2rem","7rem"]} mt="1rem" >
                   <Button bg="orange.500" color="white" mr="2rem" onClick={onOpen}
@@ -142,7 +142,7 @@ export default function Home() {
           ): (
             <Box w="100%" my="auto" h="580px">
                 <Text as="p"  textAlign={["left", "justify"]} mt="1rem" fontSize={["1.8rem"]}   w="80%" ml="auto" fontWeight="bold"> 
-                  A RelSolutions apresenta uma solução que atende as necessidades de uma limpeza eficaz, rápida e segura para suas placas solares.
+                  A REL Solutions apresenta uma solução que atende as necessidades de uma limpeza eficaz, rápida e segura para suas placas solares.
                 </Text>
                 <Box mx={["2rem","7rem"]} mt="1rem" >
                   <Button bg="orange.500" color="white" mr="2rem" onClick={onOpen}
@@ -206,7 +206,7 @@ export default function Home() {
                 >Controle via aplicativo</Text>
                 <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
                 >
-                  O Robô da RelSolutions permite ser operado via aplicativo, fornecendo praticidade e conforto na operação.
+                  O Robô da REL Solutions permite ser operado via aplicativo, fornecendo praticidade e conforto na operação.
                 </Text>
               </Box>
             </Flex>
@@ -228,7 +228,7 @@ export default function Home() {
                 >Detecção de bordas</Text>
                 <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
                 >
-                  O Robô da RelSolutions conta com sensores que detectam as bordas das placas solares, protegendo as placas de danos durante a operação.
+                  O Robô da REL Solutions conta com sensores que detectam as bordas das placas solares, protegendo as placas de danos durante a operação.
                 </Text>
               </Box>
             </Flex>
@@ -250,7 +250,7 @@ export default function Home() {
                 >Autonomia</Text>
                 <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
                 >
-                  O Robô da RelSolutions conta com sistema de carregamento solar, permitindo sua operação com duração de 8 a 10 horas de limpeza.
+                  O Robô da REL Solutions conta com sistema de carregamento solar, permitindo sua operação com duração de 8 a 10 horas de limpeza.
                 </Text>
               </Box>
             </Flex>
