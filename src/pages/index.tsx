@@ -151,7 +151,7 @@ export default function Home() {
                   </Text> */}
                   <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
                   >
-                    Nosso método de limpeza traz mais segurança pois conta com sensores que detectam as bordas das placas solares, protegendo as placas de danos durante a operação.
+                    Nosso método de limpeza traz mais segurança pois conta com sensores que detectam as bordas das placas solares, protegendo as placas durante a operação.
                   </Text>
                 </Box>
               </Flex>
