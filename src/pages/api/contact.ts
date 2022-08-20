@@ -18,7 +18,7 @@ const mailer = ({ senderMail, name, text, number }) => {
     // secure: true,
   })
     const from = `${email}`;
-    const mailList = ['luciene.santos@relsolutions.com.br', 'lenigerson.reis@relsolutions.com.br', email];
+    const mailList = [email];
     const message = {
       from,
       to: mailList,
