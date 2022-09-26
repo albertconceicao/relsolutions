@@ -28,11 +28,10 @@ export const NavLink = ({href, children, ...rest}:NavLinkProps) => {
     } else {
         return (
             <ActiveLink href={`${href}`} passHref>
-                <ChakraLink textDecoration={"none"} p={["1","3"]} borderRadius={5}  fontSize={["0.8rem","1.3rem"]} 
+                <ChakraLink textDecoration={"none"} p={["1","3"]} color="white" borderRadius={5}  fontSize={["0.8rem","1.3rem"]} 
                  _hover={{
                 textDecoration: "none",
                 bg: "orange.500",
-                color: "white",
                 }} fontWeight="semibold" {...rest}
                 >
                     {children}

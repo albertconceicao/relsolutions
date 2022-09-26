@@ -16,7 +16,7 @@ export const Header = () => {
 
     if(isDrawerHeader) {
         return (
-            <Box bg="white" h="110px" >
+            <Box bg="orange.600" h="110px" >
     
                 <Flex
                     as="header"
@@ -50,7 +50,7 @@ export const Header = () => {
     } else {
 
         return (
-            <Box bg="white" h="130px">
+            <Box bg="orange.400" h="20rem">
     
                 <Flex
                 as="header"

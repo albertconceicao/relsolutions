@@ -4,11 +4,11 @@ import { RiFacebookFill, RiInstagramFill, RiLinkedinFill, RiWhatsappFill, RiYout
 export const SocialMedia = () => {
     return (
         <HStack>
-            <Icon fontSize="26" href="https://www.facebook.com/" color="orange.600" as={RiInstagramFill} />
-            <Icon fontSize="26" color="orange.600" as={RiFacebookFill} />
-            <Icon fontSize="26" color="orange.600" as={RiWhatsappFill} />
-            <Icon fontSize="26" color="orange.600" as={RiLinkedinFill} />
-            <Icon fontSize="26" color="orange.600" as={RiYoutubeFill} />
+            <Icon fontSize="26" href="https://www.facebook.com/" color="white" as={RiInstagramFill} />
+            <Icon fontSize="26" color="white" as={RiFacebookFill} />
+            <Icon fontSize="26" color="white" as={RiWhatsappFill} />
+            <Icon fontSize="26" color="white" as={RiLinkedinFill} />
+            <Icon fontSize="26" color="white" as={RiYoutubeFill} />
         </HStack>
     );
 }

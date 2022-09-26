@@ -15,7 +15,7 @@ export const BoxContent = ({width,height, children }: BoxContentProps) => {
     
         if(isWideVersion) {
             return (
-                <Box maxWidth={`${width}`} maxH={`${height}`} mx="auto" my="4" textAlign={"center"} bg="white" boxShadow={["2xl"]} borderRadius="10px" p="4" mt="40px" >
+                <Box maxWidth={`${width}`} maxH={`${height}`} mx="auto" my="20" textAlign={"center"} bg="white" boxShadow={["2xl"]} borderRadius="10px" p="4"  >
                     {children}
                 </Box>
             );
