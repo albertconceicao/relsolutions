@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <WhatsApp />
       <Cookies />
-      <Footer />
+      {/* <Footer /> */}
     </ChakraProvider>
   );
 }

@@ -37,12 +37,12 @@ export const Contact = () => {
 
     };
     return (
-        <Stack spacing="8" mx="auto" mb="40px" >
+        <Stack spacing="8" mx="auto" my="40px" >
                 <Box p="4" as="form" onSubmit={handleSubmitEmail} >
                     <Text as="h2" fontSize="1.5rem" fontWeight={"bold"}
                     mb="3"
                     >Solicite um orçamento</Text>
-                    <FormControl w={["280px","390px","500px","550px"]} mx="auto" mt="4">
+                    <FormControl maxW={["280px","300px", "310px", "400px"]} mx="auto" mt="4">
                             <Stack spacing="6">
                                 <Box>
                                     <FormLabel htmlFor='name'>Nome</FormLabel>
@@ -69,7 +69,7 @@ export const Contact = () => {
                                     />
                                 </Box>
                                 <Box>
-                                    <FormLabel htmlFor='number'>Mensagem</FormLabel>
+                                    <FormLabel htmlFor='message'>Mensagem</FormLabel>
                                     <Textarea placeholder="Insira sua mensagem aqui" name="message" bg="gray.300" 
                                     value={message}
                                     onChange={({target}) => setMessage(target.value)}

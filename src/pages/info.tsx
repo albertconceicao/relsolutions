@@ -210,7 +210,7 @@ export default function Info () {
                     <meta name="keywords" content="relsolutions, limpeza solar, painel solar, limpeza de painel solar, limpeza de placas, limpeza de placas solares, placas solares"/>
                 </Head>
 
-                <Flex direction="column" pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto"  bgGradient="linear(to-b, orange.300, orange.700)">
+                <Flex direction="column" pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto"  bgGradient="linear(to-b, orange.300, orange.700)" pos="absolute" top="300px" right="0" bottom="0" left="0">
 
                 <Box mx="auto">
 
