@@ -20,7 +20,7 @@ export const Introduction = () => {
     
       <Box mt="-10rem"> 
 
-        <BoxContent width={isMobileVersion ? '100%': '80%'} dataAos="fade-down">
+        <BoxContent width={isMobileVersion ? '100%': '80%'} dataAos="zoom-in">
 
           <SimpleGrid columns={2} mx="auto" m={["0","2","2","2","2"]} borderRadius={10} p={["0","5","5","5","5"]} spacing={5}
           opacity={1} maxH={["50rem","50rem", "40rem","25rem"]}
