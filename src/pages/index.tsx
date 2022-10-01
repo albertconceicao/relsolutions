@@ -2,19 +2,15 @@ import { useEffect } from 'react';
 import 'aos/dist/aos.css'
 import Aos from 'aos';
 
-import { MotionBox } from '../styles/animation';
-import { Box, Button, Image as ChakraImage, Flex, FormControl, FormLabel, Icon, Input, ListItem, Modal, ModalContent, ModalOverlay, SimpleGrid, Stack, Text, Textarea, UnorderedList, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
+import { Box, Image as ChakraImage, Flex, Icon, SimpleGrid, Text, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
 import { BoxContent } from "../components/BoxContent";
 import Head from 'next/head';
-import Image from 'next/image';
 import { BsPhoneFill, BsFillShieldFill, BsBatteryCharging } from 'react-icons/bs';
 
-import { Video } from "../components/Video";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { sendContactMail } from "../services/sendMail";
 
-import Card from 'react-bootstrap/Card';
 
 // Import Swiper styles
 import "swiper/css";
@@ -24,21 +20,23 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-cards";
 import "swiper/css/lazy";
 
+
+
 // import "./styles.css";
 
 
 // import Swiper core and required modules
 import {
-  Navigation, Pagination, Autoplay, Lazy
+  Navigation, Pagination, Lazy
 } from 'swiper';
-import { GiFlyingTarget } from "react-icons/gi";
 import { useState } from "react";
 import 'react-toastify/dist/ReactToastify.css';
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import { Introduction } from "../components/Introduction";
 import { TextTitle } from "../components/TextTitle";
 import { TextContent } from "../components/TextContent";
 import { Contact } from "../components/Contact";
+import { Footer } from '../components/Footer';
 
 
 export default function Home() {
@@ -98,7 +96,7 @@ export default function Home() {
         <link rel="icon" type="image/jpg" href="/logo-2.jpg"/>
       </Head>
       <Box bgGradient="linear(to-b, gray.200, gray.400)"  >
-        <Flex direction="column" mx="auto"  maxW="1400px" pos="absolute" top="300px" right="0" bottom="0" left="0" data-aos="fade-down">
+        <Flex direction="column" mx="auto" pos="absolute" top="300px" right="0" bottom="0" left="0"  maxW="1400px" data-aos="fade-down">
 
           <Introduction />
 
@@ -115,7 +113,7 @@ export default function Home() {
                 </Box>
               
                 {isWideVersion && (
-                  <Box mx={["2rem","16rem"]} mr="0" mt="3rem">
+                  <Box m={["0","0 3rem","0 3rem","0 5rem","0 10rem"]}  >
                     <Swiper
                           modules={[Navigation, Pagination, Lazy]}
                           slidesPerView={1}
@@ -127,20 +125,24 @@ export default function Home() {
                             clickable: true,
                           }}
                           style={{
-                            margin: '0 auto',
+                            // margin: '0 auto',
                             animationDelay: '0.5s',
+                            width: '100%',
+                            marginRight: 0,
+                            flex: 1,
+                            borderRadius: '0'
                           }}
                           // centeredSlides
                           lazy
                           >
                             <SwiperSlide>
-                              <ChakraImage overflowX="hidden"borderRadius={8} src="./robot-1.png" maxW="700px" maxH="550px" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
+                              <ChakraImage overflowX="hidden"borderRadius={8} src="./solar-1.jpg" maxW="800px" h="500px" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                              <ChakraImage overflowX="hidden"borderRadius={8} src="./robot-2.png" maxW="700px" maxH="550px" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
+                              <ChakraImage overflowX="hidden"borderRadius={8} src="./solar-4.jpg" maxW="800px" h="500px" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                              <ChakraImage overflowX="hidden"borderRadius={8} src="./robot-3.png" maxW="700px" maxH="550px" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
+                              <ChakraImage overflowX="hidden"borderRadius={8} src="./solar-3.jpg" maxW="800px" h="500px" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
                             </SwiperSlide>
                           
                     </Swiper>
@@ -158,7 +160,7 @@ export default function Home() {
               <BoxContent width="100%" dataAos='zoom-in'>
                 <Box overflowX="hidden">
                   <TextTitle content="Limpeza eficiente e controlada" />
-                  <TextContent content="Utilizamos um sistema de limpeza que permite ter fácil montagem e alto rendimento em um menor tempo." />
+                  <TextContent content="Utilizamos um sistema de limpeza que permite ter fácil montagem das ferramentas e alto rendimento da operação em um menor tempo." />
                 </Box>
               </BoxContent>
               <BoxContent width="100%" dataAos={isMobileVersion ? 'flip-right' : 'fade-up-right'}>
@@ -174,13 +176,9 @@ export default function Home() {
                       textAlign="center"
                       mt="5"
                       >Conforto e praticidade</Text>
-                      {/* <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                      >
-                        O Robô da REL Solutions permite ser operado via aplicativo, fornecendo praticidade e conforto na operação.
-                      </Text> */}
                       <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
                       >
-                        Alinhados com a tecnologia e inovação, transmitimos conforto e praticidade durante a operação de limpeza das placas.
+                        Alinhados com a tecnologia e inovação, transmitimos conforto, otimização e praticidade durante a operação de limpeza das placas.
                       </Text>
                   </Box>
                   <Box mx="auto" my="auto">
@@ -210,12 +208,8 @@ export default function Home() {
                     <Box  my="auto">
                       <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
                           textAlign="center"
-                          // mt="5"
                           >Segurança </Text>
-                          {/* <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                          >
-                            O Robô da REL Solutions conta com sensores que detectam as bordas das placas solares, protegendo as placas de danos durante a operação.
-                          </Text> */}
+                          
                           <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
                           >
                             Nosso método de limpeza traz mais segurança pois conta com sensores que detectam as bordas das placas solares, protegendo as placas de danos durante a operação.
@@ -248,7 +242,7 @@ export default function Home() {
                       </Text> */}
                       <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
                       >
-                        Nosso método de limpeza permite limpar mais placas em menor tempo, em operações que podem durar de 8 a 10 horas.
+                        Nosso método de limpeza permite limpar mais placas solares em menor tempo, em operações de limpeza que podem durar de 8 a 10 horas.
                       </Text>
                   </Box>
                   <Box mx="auto" my="auto">
@@ -293,8 +287,8 @@ export default function Home() {
               </BoxContent>
             </Flex>
           </Box>
+        <Footer />
         </Flex>
-        
       </Box>
     </>
     

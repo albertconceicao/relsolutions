@@ -5,9 +5,9 @@ import {BsPeopleFill} from 'react-icons/bs'
 
 export const Footer = () => {
     return (
-        <Box boxShadow={["inner"]}>
+        <Box >
 
-            <Flex direction={["column","column","row","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto" justify={"space-evenly"} bg="white" fontWeight={"400"} mt="1rem"
+            <Flex direction={["column","column","row","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto" justify={"space-evenly"} bg="white" fontWeight={"400"} mt="1rem" maxW="inherit"
              w="100%" bottom="0" right="0" left="0"
             >
                 

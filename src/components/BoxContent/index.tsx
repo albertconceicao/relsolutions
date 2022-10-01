@@ -15,10 +15,7 @@ export const BoxContent = ({width,height, children, dataAos }: BoxContentProps) 
         base: false,
         md: true,
     })
-    const isMobileVersion = useBreakpointValue({
-        base: false,
-        sm: true
-    })
+    
     
         if(isWideVersion) {
             return (

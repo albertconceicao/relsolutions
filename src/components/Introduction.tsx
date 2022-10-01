@@ -28,7 +28,7 @@ export const Introduction = () => {
           // alignItems={"center"}
           >
       
-            <Box as="h2" my="auto" ml="40px" maxH="600px">
+            <Box as="h2" ml="40px" maxH="600px">
 
   
               
@@ -56,7 +56,7 @@ export const Introduction = () => {
               </Box>
             </Box>
 
-            <Box mx="auto" my="1.7rem" maxW={380}>
+            <Box mx="auto" maxW={380}>
               <Video />
             </Box>
           </SimpleGrid>
