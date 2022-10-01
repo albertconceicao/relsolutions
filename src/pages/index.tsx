@@ -220,38 +220,6 @@ export default function Home() {
                 </Box>
               </BoxContent>
                 
-<<<<<<< HEAD
-                />
-                <Box my="auto">
-                  {/* <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                  textAlign="center"
-                  mt="5"
-                  >Detecção de bordas</Text> */}
-                  <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                  textAlign="center"
-                  mt="5"
-                  >Segurança </Text>
-                  {/* <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                  >
-                    O Robô da REL Solutions conta com sensores que detectam as bordas das placas solares, protegendo as placas de danos durante a operação.
-                  </Text> */}
-                  <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                  >
-                    Nosso método de limpeza traz mais segurança pois conta com sensores que detectam as bordas das placas solares, protegendo as placas durante a operação.
-                  </Text>
-                </Box>
-              </Flex>
-            </Box>
-
-            <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["350px","38-px","300px"]} mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4"  mt="40px" _hover={{
-              transition: "0.6s",
-              transform: "translateY(-0.5rem)",
-              bg: "orange.200",
-            }}>
-              <Flex direction="column">
-                <Icon as={BsBatteryCharging} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-=======
->>>>>>> develop
                 
               <BoxContent width="100%" dataAos={isMobileVersion ? 'flip-right' : 'fade-up-right'}>
                 <Box overflowX="hidden" mt="-80px">
