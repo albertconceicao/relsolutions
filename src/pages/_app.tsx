@@ -5,6 +5,7 @@ import { theme } from '../styles/theme';
 import { Cookies } from '../components/Cookies';
 import { Footer } from '../components/Footer';
 
+import '../styles/slider.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,7 +14,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <WhatsApp />
       <Cookies />
-      <Footer />
+      {/* <Footer /> */}
     </ChakraProvider>
   );
 }

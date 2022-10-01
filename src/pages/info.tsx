@@ -1,9 +1,13 @@
-import { Box, Flex, Icon, ListItem, Text, UnorderedList, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Icon, ListItem, SimpleGrid, Text, UnorderedList, useBreakpointValue } from "@chakra-ui/react";
 import { GiCutDiamond } from "react-icons/gi";
 import { FiTarget } from "react-icons/fi";
 import { GoTelescope } from "react-icons/go";
 import Head from "next/head";
 import { FaSolarPanel, FaTools } from 'react-icons/fa';
+import { BoxContent } from "../components/BoxContent";
+import { TextTitle } from "../components/TextTitle";
+import { TextContent } from "../components/TextContent";
+import { Footer } from "../components/Footer";
 
 
 export default function Info () {
@@ -11,383 +15,231 @@ export default function Info () {
         base: false,
         md: true,
     })
+    const isMobileVersion = useBreakpointValue({
+        base: true,
+        lg: false
+    })
 
     
-    {if(!isWideVersion) {
+    
         return (
             <>
-            
                 <Head>
                     <title>REL Solutions - Quem Somos</title>
                     <meta name="description" content="Limpeza eficiente e controlada de placas solares com baixo custo e alto rendimento."/>
                     <meta name="keywords" content="relsolutions, limpeza solar, painel solar, limpeza de painel solar, limpeza de placas, limpeza de placas solares, placas solares"/>
                 </Head>
-                <Flex direction={["column","column","row","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto" justify={"center"} bgGradient="linear(to-b, orange.300, orange.700)">
-        
-                                        
-                        <Box mx="auto">
+                <Box bgGradient="linear(to-b, gray.200, gray.400)" >
+                <Flex direction="column" mx="auto" pos="absolute" top="300px" right="0" bottom="0" left="0"  maxW="1400px" data-aos="fade-down">
+                    <Box mt="-10rem">
 
-                    <Text my="2rem" fontSize={["1.9rem","2rem","2.5rem"]}  fontWeight="bold" textAlign="center" color="white">Quem somos?</Text>
-
-                        <Text textAlign="justify" color="white" maxW="900px" mx="auto" fontSize={["1.1rem","1.2rem"]} fontWeight="bold" >
-                            A REL Solutions  representa a inovação em limpeza, operação, manutenção e instalação de painéis fotovoltaicos. <br /> <br /> Nosso principal objetivo é promover soluções tecnológicas, através da limpeza automatizada dos painéis, e demais serviços, atendendo de forma rápida, prática, segura e eficaz. <br /> <br />
-                            Desenvolvemos uma forma independente de limpeza de placas solares que atendem grande parte das usinas fotovoltaicas, com agilidade, eficiência , e principalmente, com baixos custos. <br /> <br />
-                            Temos como principal objetivo oferecer soluções com alta tecnologia na área de usinas solares.
-                        </Text>
-
+                        <BoxContent width="100%" dataAos='zoom-in'>
+                            <Box overflowX="hidden">
+                                <TextTitle content="Quem somos?" />
+                                <TextContent justify content="A REL Solutions  representa a inovação em limpeza, operação, manutenção e instalação de painéis fotovoltaicos. Nosso principal objetivo é promover soluções tecnológicas, através da limpeza automatizada dos painéis, e demais serviços, atendendo de forma rápida, prática, segura e eficaz." />
+                                <TextContent justify content="Desenvolvemos uma forma independente de limpeza de placas solares que atendem grande parte das usinas fotovoltaicas, com agilidade, eficiência , e principalmente, com baixos custos." />
+                                <TextContent justify content="Temos como principal objetivo oferecer soluções com alta tecnologia na área de usinas solares." />
+                            </Box>
+                        </BoxContent>
                     </Box>
 
-                    <Text mx="auto" my="4rem" fontSize={["1.9rem","2rem","2.5rem"]} fontWeight="bold" color="white">Missão, Visão e Valores</Text>
-
-                    <Box>
-                    <Flex justify="center" direction="column">
-                        <Box width={["230px", "250px", "280px", "310px", "350px"]} height="500" mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4"  _hover={{
-                            transition: "0.6s",
-                            transform: "translateY(-0.5rem)",
-                            bg: "orange.200",
-                            bgGradient: "linear(to-b, white, orange.100)"
-                        }}
+                    <BoxContent width="100%" dataAos='zoom-in'>
+                        <Box overflowX="hidden">
+                        <TextTitle content="Nossa Missão, Visão e Valores" />
+                        <TextContent content="Conheça mais sobre nossa Missão, Visão e Valores que regem a nossa organização e nos direcionam ao serviço de excelência." />
+                        </Box>
+                    </BoxContent>
+                    <BoxContent width="100%" dataAos={isMobileVersion ? 'flip-right' : 'fade-up-right'}>
+                        <Box overflowX="hidden" mt="-80px">
+                        <SimpleGrid columns={2} mx="auto" my="5rem"  p={["0","5","5","5","5"]} spacing={5}
+                        opacity={1}
+                        data-aos={isMobileVersion ? 'flip-right' : 'fade-left'}
+                        h={["25rem","22rem","22rem","15rem"]}
+                        minChildWidth="250px"
                         >
-                            <Flex direction="column">
-                            <Icon as={FiTarget} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-                            
-                            />
-                            <Box my="auto">
-                                <Text as="h2" fontSize={["1.3rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                                textAlign="center"
-                                mt="5"
-                                >Nossa Missão</Text>
-                                <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                                >
+                        <Box mx="auto" my="auto">
+                            <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
+                            textAlign="center"
+                            mt="5"
+                            >Nossa missão</Text>
+                            <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            >
                                 Nossa missão é desenvolver, buscar e aperfeiçoar metodologias tecnológicas, oferecendo maior agilidade e eficiência em nossos serviços, proporcionando  uma experiência única, sustentável e segura.
-                                </Text>
-                            </Box>
-                            </Flex>
+                            </Text>
                         </Box>
-
-                        <Box width={["230px", "250px", "280px", "310px", "350px"]} height="500" mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4" mt="40px" _hover={{
-                            transition: "0.6s",
-                            transform: "translateY(-0.5rem)",
-                            bg: "orange.200",
-                        }}>
-                            <Flex direction="column">
-                            <Icon as={GoTelescope} fontSize="3rem" mx="auto" my="auto" color="orange.600"
+                        <Box mx="auto" my="auto">
+                            <Icon as={FiTarget} fontSize={["8rem", "10rem", "12rem", "15rem"]}  color="orange.600"
                             
                             />
-                            <Box my="auto">
-                                <Text as="h2" fontSize={["1.3rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                                textAlign="center"
-                                mt="5"
-                                >Nossa Visão</Text>
-                                <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                                >
-                                Oferecer  soluções tecnológicas agregadas aos nossos serviços.
-                                </Text>
-                            </Box>
-                            </Flex>
                         </Box>
-                        <Box width={["230px", "250px", "280px", "310px", "350px"]} height="500" mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4" mt="40px" _hover={{
-                            transition: "0.6s",
-                            transform: "translateY(-0.5rem)",
-                            bg: "orange.200",
-                        }}>
-                            <Flex direction="column">
-                            <Icon as={GiCutDiamond} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-                            
-                            />
-                            <Box my="auto">
-                                <Text as="h2" fontSize={["1.3rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                                textAlign="center"
-                                mt="5"
-                                >Nossos Valores</Text>
-                                <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                                >
-                                    Respeito ao cliente. <br /> 
-                                    Zelo pelas pessoas que contribuem para o crescimento e desenvolvimento da REL Solutions;
-                                    <br />
-                                    Busca de soluções tecnológicas  de forma a aprimorar  processos;
-                                    <br />
-                                    Atendemos bem para atendermos sempre.
-                                {/* <UnorderedList textAlign={["justify"]} p="8" color="gray.500" fontSize="1.1rem">
-                                <ListItem>Respeito ao cliente;</ListItem>
-                                <ListItem>Zelo pelas pessoas que contribuem para o crescimento e desenvolvimento da REL Solutions;</ListItem>
-                                <ListItem>Busca de soluções tecnológicas  de forma a aprimorar  processos;</ListItem>
-                                <ListItem>Atendemos bem para atendermos sempre.</ListItem>
-                            </UnorderedList> */}
-                                </Text>
-                            </Box>
-                            </Flex>
+                        </SimpleGrid>
                         </Box>
-                    </Flex>
+                    </BoxContent>
 
-                    </Box>
-
-
-                    <Text mx="auto" my="3rem" fontSize={["1.9rem","2rem","2.5rem"]} fontWeight="bold" color="white">Nossos Serviços</Text>
-
-                    <Box>
-                        <Flex direction={["column","column","row","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto" justify={"center"} mb="4" >
-
+                    <BoxContent width="100%" dataAos={isMobileVersion ? 'flip-left' : 'fade-up-left'}>
+                        <Box overflowX="hidden" mt="-80px">
+                        <SimpleGrid columns={2} mx="auto" my="5rem"  p={["0","5","5","5","5"]} spacing={5}
+                        opacity={1}
+                        data-aos={isMobileVersion ? 'flip-left' : 'fade-right'}
+                        h={["25rem","22rem","22rem","15rem"]}
+                        minChildWidth="250px"
+                        >
+                            <Box my="auto" mx="auto">
+                            <Icon as={GoTelescope} fontSize={["8rem", "10rem", "12rem", "15rem"]} color="orange.600"
                                 
-                            <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["250px"]} mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4"   _hover={{
-                            transition: "0.6s",
-                            transform: "translateY(-0.5rem)",
-                            bg: "orange.200",
-                            }}>
-                            <Flex direction="column">
-                            <Icon as={FaSolarPanel} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-
                             />
-                            <Box my="auto">
-                                <Text as="h2" fontSize={["1.3rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                                textAlign="center"
-                                mt="5"
-                                >Limpeza de placa solar</Text>
-                                <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                                >
-                                Limpeza automatizada de placas solares
-                                </Text>
                             </Box>
-                            </Flex>
-                            </Box>
-
-                            <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["250px"]} mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4"  mt="40px" _hover={{
-                            transition: "0.6s",
-                            transform: "translateY(-0.5rem)",
-                            bg: "orange.200",
-                            }}>
-                            <Flex direction="column">
-                            <Icon as={FaTools} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-
-                            />
-                            <Box my="auto">
-                                <Text as="h2" fontSize={["1.3rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                                textAlign="center"
-                                mt="5"
-                                >Instalação de placa solar</Text>
-                                <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                                >
-                                Instalações certificadas e padronizadas.
-                                </Text>
-                            </Box>
-                            </Flex>
-                            </Box>
-                            <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["250px"]} mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4"  mt="40px" _hover={{
-                            transition: "0.6s",
-                            transform: "translateY(-0.5rem)",
-                            bg: "orange.200",
-                            }}>
-                            <Flex direction="column">
-                            <Icon as={FaTools} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-
-                            />
-                            <Box my="auto">
-                                <Text as="h2" fontSize={["1.3rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                                textAlign="center"
-                                mt="5"
-                                >Limpeza e Manutenção predial</Text>
-                                <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                                >
-                                Instalações certificadas e padronizadas.
-                                </Text>
-                            </Box>
-                        </Flex>
-                    </Box>
-
-
-                    </Flex>
-                    </Box>
-                </Flex>     
-        
-            </>
-        );
-    } else {
-        return (
-            <>
-                <Head>
-                    <title>REL Solutions - Quem Somos</title>
-                    <meta name="description" content="Limpeza eficiente e controlada de placas solares com baixo custo e alto rendimento."/>
-                    <meta name="keywords" content="relsolutions, limpeza solar, painel solar, limpeza de painel solar, limpeza de placas, limpeza de placas solares, placas solares"/>
-                </Head>
-
-                <Flex direction="column" pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto"  bgGradient="linear(to-b, orange.300, orange.700)">
-
-                <Box mx="auto">
-
-                    <Text my="2rem" fontSize="2.5rem" fontWeight="bold" textAlign="center" color="white">Quem somos?</Text>
-
-                        <Text textAlign="justify" color="white" maxW="900px" mx="auto" fontSize={["1.2rem"]} fontWeight="bold" >
-                            A REL Solutions  representa a inovação em limpeza, operação, manutenção e instalação de painéis fotovoltaicos. <br /> <br /> Nosso principal objetivo é promover soluções tecnológicas, através da limpeza automatizada dos painéis, e demais serviços, atendendo de forma rápida, prática, segura e eficaz. <br /> <br />
-                            Desenvolvemos uma forma independente de limpeza de placas solares que atendem grande parte das usinas fotovoltaicas, com agilidade, eficiência , e principalmente, com baixos custos. <br /> <br />
-                            Temos como principal objetivo oferecer soluções com alta tecnologia na área de usinas solares.
-                        </Text>
-                    
-                </Box>
-
-                <Text mx="auto" my="2rem" fontSize="2.5rem" fontWeight="bold" color="white">Missão, Visão e Valores</Text>
-
-                <Box>
-                    <Flex justify="center">
-                    <Box width={["230px", "250px", "280px", "310px", "350px"]} height="400" mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4" m="4" mt="40px" _hover={{
-                        transition: "0.6s",
-                        transform: "translateY(-0.5rem)",
-                        bg: "orange.200",
-                        bgGradient: "linear(to-b, white, orange.100)"
-                    }}
-                    >
-                        <Flex direction="column">
-                        <Icon as={FiTarget} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-                        
-                        />
-                        <Box my="auto">
+                            <Box  my="auto">
                             <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                            textAlign="center"
-                            mt="5"
-                            >Nossa Missão</Text>
-                            <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                            >
-                            Nossa missão é desenvolver, buscar e aperfeiçoar metodologias tecnológicas, oferecendo maior agilidade e eficiência em nossos serviços, proporcionando  uma experiência única, sustentável e segura.
-                            </Text>
+                                textAlign="center"
+                                >Nossa Visão </Text>
+                                
+                                <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                                >
+                                Oferecer  soluções tecnológicas agregadas aos nossos serviços, solucionando as demandas diárias e repetitivas, trazendo um impacto positivo para nossos clientes e a sociedade.
+                                </Text>
+                            </Box>
+                        
+                            </SimpleGrid>
                         </Box>
-                        </Flex>
-                    </Box>
-
-                    <Box width={["230px", "250px", "280px", "310px", "350px"]} height="400" mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4" m="4" mt="40px" _hover={{
-                        transition: "0.6s",
-                        transform: "translateY(-0.5rem)",
-                        bg: "orange.200",
-                    }}>
-                        <Flex direction="column">
-                        <Icon as={GoTelescope} fontSize="3rem" mx="auto" my="auto" color="orange.600"
+                    </BoxContent>
+                    <BoxContent width="100%" dataAos={isMobileVersion ? 'flip-right' : 'fade-up-right'}>
+                        <Box overflowX="hidden" mt="-80px">
+                        <SimpleGrid columns={2} mx="auto" my="5rem" borderRadius={10} p={["0","5","5","5","5"]}  spacing={5}
+                        opacity={1}
+                        data-aos={isMobileVersion ? 'flip-right' : 'fade-left'}
+                        zIndex={3}
+                        h={["25rem","22rem","22rem","15rem"]}
+                        minChildWidth="250px"
+                        >
                         
-                        />
                         <Box my="auto">
                             <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
                             textAlign="center"
-                            mt="5"
-                            >Nossa Visão</Text>
-                            <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                            >
-                            Oferecer  soluções tecnológicas agregadas aos nossos serviços.
-                            </Text>
-                        </Box>
-                        </Flex>
-                    </Box>
-                    <Box width={["230px", "250px", "280px", "310px", "350px"]} height="400" mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4" m="4" mt="40px" _hover={{
-                        transition: "0.6s",
-                        transform: "translateY(-0.5rem)",
-                        bg: "orange.200",
-                    }}>
-                        <Flex direction="column">
-                        <Icon as={GiCutDiamond} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-                        
-                        />
-                        <Box my="auto">
-                            <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                            textAlign="center"
-                            mt="5"
+                            // mt="5"
                             >Nossos Valores</Text>
+                            {/* <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            >
+                                O Robô da REL Solutions conta com sistema de carregamento solar, permitindo sua operação com duração de 8 a 10 horas de limpeza.
+                            </Text> */}
                             <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
                             >
-                                Respeito ao cliente. <br /> 
-                                Zelo pelas pessoas que contribuem para o crescimento e desenvolvimento da REL Solutions;
-                                 <br />
-                                Busca de soluções tecnológicas  de forma a aprimorar  processos;
-                                 <br />
-                                Atendemos bem para atendermos sempre.
-                            {/* <UnorderedList textAlign={["justify"]} p="8" color="gray.500" fontSize="1.1rem">
-                            <ListItem>Respeito ao cliente;</ListItem>
-                            <ListItem>Zelo pelas pessoas que contribuem para o crescimento e desenvolvimento da REL Solutions;</ListItem>
-                            <ListItem>Busca de soluções tecnológicas  de forma a aprimorar  processos;</ListItem>
-                            <ListItem>Atendemos bem para atendermos sempre.</ListItem>
-                        </UnorderedList> */}
+                                Respeito ao cliente, zelo pelas pessoas que contribuem para o crescimento e desenvolvimento da REL Solutions, busca de soluções tecnológicas  de forma a aprimorar processos, tendo como prioridade a excelência no suporte e atendimento aos nossos clientes.
                             </Text>
                         </Box>
-                        </Flex>
-                    </Box>
-                    </Flex>
-                    
-                </Box>
-                
-                    
-            <Text mx="auto" my="2rem" fontSize="2.5rem" fontWeight="bold" color="white">Nossos Serviços</Text>
-
-            <Box>
-            <Flex direction={["column","column","row","row"]} pl={["4","6","8","10"]} pr={["4","6","8","10"]} mx="auto" justify={"center"} >
-
+                        <Box mx="auto" my="auto">
+                            <Icon as={GiCutDiamond} fontSize={["8rem", "10rem", "12rem", "15rem"]} color="orange.600"
                             
-                <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["250px"]} mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4" m="4" mt="40px" _hover={{
-                    transition: "0.6s",
-                    transform: "translateY(-0.5rem)",
-                    bg: "orange.200",
-                }}>
-                    <Flex direction="column">
-                    <Icon as={FaSolarPanel} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-                    
-                    />
-                    <Box my="auto">
-                        <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                        textAlign="center"
-                        mt="5"
-                        >Limpeza de placa solar</Text>
-                        <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                        >
-                        Limpeza automatizada de placas solares
-                        </Text>
-                    </Box>
-                    </Flex>
-                </Box>
+                            />
+                        </Box>
+                        
+                        </SimpleGrid>
+                        </Box>
+                    </BoxContent>
 
-                <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["250px"]} mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4" m="4" mt="40px" _hover={{
-                    transition: "0.6s",
-                    transform: "translateY(-0.5rem)",
-                    bg: "orange.200",
-                }}>
-                    <Flex direction="column">
-                    <Icon as={FaTools} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-                    
-                    />
-                    <Box my="auto">
-                        <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                        textAlign="center"
-                        mt="5"
-                        >Instalação de placa solar</Text>
-                        <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                        >
-                        Instalações certificadas e padronizadas.
-                        </Text>
-                    </Box>
-                    </Flex>
-                </Box>
-                <Box width={["230px", "250px", "280px", "310px", "350px"]} height={["250px"]} mx="auto" textAlign={"center"} bg="white" boxShadow={["lg"]} borderRadius="10px" p="4" m="4" mt="40px" _hover={{
-                    transition: "0.6s",
-                    transform: "translateY(-0.5rem)",
-                    bg: "orange.200",
-                }}>
-                    <Flex direction="column">
-                    <Icon as={FaTools} fontSize="3rem" mx="auto" my="auto" color="orange.600"
-                    
-                    />
-                    <Box my="auto">
-                        <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
-                        textAlign="center"
-                        mt="5"
-                        >Limpeza e Manutenção predial</Text>
-                        <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                        >
-                        Instalações certificadas e padronizadas.
-                        </Text>
-                    </Box>
-                    </Flex>
-                </Box>
 
-                
-            </Flex>
-            </Box>
-            </Flex>
+                    <BoxContent width="100%" dataAos='zoom-in'>
+                        <Box overflowX="hidden">
+                        <TextTitle content="Nossos Serviços" />
+                        <TextContent content="Conheça mais sobre os serviços que prestamos utilizando a limpeza automatizada de placas solares, além de outros serviços adicionais." />
+                        </Box>
+                    </BoxContent>
+
+                    <BoxContent width="100%" dataAos={isMobileVersion ? 'flip-right' : 'fade-up-right'}>
+                        <Box overflowX="hidden" mt="-80px">
+                        <SimpleGrid columns={2} mx="auto" my="5rem"  p={["0","5","5","5","5"]} spacing={5}
+                        opacity={1}
+                        data-aos={isMobileVersion ? 'flip-right' : 'fade-left'}
+                        h={["25rem","22rem","22rem","15rem"]}
+                        minChildWidth="250px"
+                        >
+                        <Box mx="auto" my="auto">
+                            <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
+                            textAlign="center"
+                            mt="5"
+                            >Limpeza de placa solar</Text>
+                            <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            >
+                                Limpeza automatizada, segura, eficiente e otimizada de placas solares de prédios, parques, residências e indústrias que utilizam as placas solares para reter energia.
+                            </Text>
+                        </Box>
+                        <Box mx="auto" my="auto">
+                            <Icon as={FaSolarPanel} fontSize={["8rem", "10rem", "12rem", "15rem"]}  color="orange.600"
+                            
+                            />
+                        </Box>
+                        </SimpleGrid>
+                        </Box>
+                    </BoxContent>
+
+                    <BoxContent width="100%" dataAos={isMobileVersion ? 'flip-left' : 'fade-up-left'}>
+                        <Box overflowX="hidden" mt="-80px">
+                        <SimpleGrid columns={2} my="5rem" p={["0","5","5","5","5"]}  spacing={5}
+                        opacity={1}
+                        
+                        data-aos={isMobileVersion ? 'flip-left' : 'fade-right'}
+                        zIndex={20}
+                        h={["25rem","22rem","22rem","15rem"]}
+                        minChildWidth="250px"
+                        >
+                            <Box my="auto" mx="auto">
+                            <Icon as={FaTools} fontSize={["8rem", "10rem", "12rem", "15rem"]} color="orange.600"
+                                
+                            />
+                            </Box>
+                            <Box  my="auto">
+                            <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
+                                textAlign="center"
+                                >Instalação de placa solar </Text>
+                                
+                                <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                                >
+                                Instalações certificadas e padronizadas, com profissionais treinados, regulamentados e com as exigências de segurança para a realização dos serviços.
+                                </Text>
+                            </Box>
+                        
+                            </SimpleGrid>
+                        </Box>
+                    </BoxContent>
+                    <BoxContent width="100%" dataAos={isMobileVersion ? 'flip-right' : 'fade-up-right'}>
+                        <Box overflowX="hidden" mt="-80px">
+                        <SimpleGrid columns={2} mx="auto" my="5rem" borderRadius={10} p={["0","5","5","5","5"]}  spacing={5}
+                        opacity={1}
+                        data-aos={isMobileVersion ? 'flip-right' : 'fade-left'}
+                        zIndex={3}
+                        h={["25rem","22rem","22rem","15rem"]}
+                        minChildWidth="250px"
+                        >
+                        
+                        <Box my="auto">
+                            <Text as="h2" fontSize={["1rem","1.2rem","1.3rem","1.4rem","1.5rem"]} fontWeight={"bold"} textTransform="initial" 
+                            textAlign="center"
+                            // mt="5"
+                            >Limpeza e Manutenção predial</Text>
+                            {/* <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            >
+                                O Robô da REL Solutions conta com sistema de carregamento solar, permitindo sua operação com duração de 8 a 10 horas de limpeza.
+                            </Text> */}
+                            <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            >
+                                Limpezas e serviços prediais, visando a excelência, rapidez e sustentabilidade do serviço, de acordo com as necessidades dos clientes.
+                            </Text>
+                        </Box>
+                        <Box mx="auto" my="auto">
+                            <Icon as={FaTools} fontSize={["8rem", "10rem", "12rem", "15rem"]} color="orange.600"
+                            
+                            />
+                        </Box>
+                        
+                        </SimpleGrid>
+                        </Box>
+                    </BoxContent>
+                    <Footer />
+                </Flex>
+                </Box>
             </>
         );
-    }}
+ 
 
     
 }
