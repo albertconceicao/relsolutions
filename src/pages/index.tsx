@@ -136,13 +136,13 @@ export default function Home() {
                           lazy
                           >
                             <SwiperSlide>
-                              <ChakraImage overflowX="hidden"borderRadius={8} src="./solar-1.jpg" maxW="800px" h="500px" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
+                              <ChakraImage overflowX="hidden"borderRadius={8} src="./solar-1.jpg" maxW="800px" h="500px" alt="Placas solares em um terraço de um edifício"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                              <ChakraImage overflowX="hidden"borderRadius={8} src="./solar-4.jpg" maxW="800px" h="500px" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
+                              <ChakraImage overflowX="hidden"borderRadius={8} src="./solar-4.jpg" maxW="800px" h="500px" alt="Parque de placas solares abaixo de um céu azul"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                              <ChakraImage overflowX="hidden"borderRadius={8} src="./solar-3.jpg" maxW="800px" h="500px" alt="Imagem do Robô da RelSolutions limpando placas solares"/>
+                              <ChakraImage overflowX="hidden"borderRadius={8} src="./solar-3.jpg" maxW="800px" h="500px" alt="Instalação de placas solares no campo, cercada por área verde"/>
                             </SwiperSlide>
                           
                     </Swiper>
