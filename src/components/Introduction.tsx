@@ -25,34 +25,21 @@ export const Introduction = () => {
           <SimpleGrid columns={2} mx="auto" m={["0","2","2","2","2"]} borderRadius={10} p={["0","5","5","5","5"]} spacing={5}
           opacity={1} maxH={["50rem","50rem", "40rem","25rem"]}
           minChildWidth="300px" 
-          // alignItems={"center"}
           >
       
-            <Box as="h2" ml="40px" maxH="600px">
+            <Box as="h2" maxH="600px" p="2rem 0 ">
 
   
               
               <Box w="100%" my="auto">
-                <Text as="h1" color="orange.600"  w="100%" fontSize={["1.2rem","1.8rem","2rem","3rem"]} fontWeight="bold" textAlign="left" maxH="200px">
+                <Text as="h1" color="orange.600"  w="100%" fontSize={["1.2rem","1.8rem","2rem","2.7rem"]} fontWeight="bold" textAlign="left" maxH="200px">
                   Automatize sua limpeza
                 </Text>
               
-                <Text  as="p"  textAlign={["left", "justify"]} mt="1rem" fontSize={["1rem","1.4rem","1.4rem"]}   w="100%" ml="auto" fontWeight="bold"> 
+                <Text  as="p"  textAlign={["left", "justify"]} mt="4rem" fontSize={["1.1rem"]} w="100%" ml="auto"> 
                   A REL Solutions apresenta uma solução que atende as necessidades de uma limpeza eficaz, rápida e segura para suas placas solares.
                 </Text>
-                {/* <Box mx={["2rem","7rem"]} mt="1rem" >
-                  <Button bg="orange.500" color="white" mr="2rem" onClick={onOpen}
-                  _hover={{
-                    bg: "orange.600"
-                  }}
-                  >Ver vídeo</Button>
-                </Box>  
-                <Modal isOpen={isOpen} onClose={onClose} isCentered>
-                  <ModalOverlay />
-                  <ModalContent  bg="none">
-                    <Video />
-                  </ModalContent>
-                </Modal> */}
+               
               </Box>
             </Box>
 

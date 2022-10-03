@@ -15,11 +15,11 @@ export const NavLink = ({href, children, ...rest}:NavLinkProps) => {
     if (isMobileVersion) {
         return (
             <ActiveLink href={`${href}`} passHref>
-            <ChakraLink color="white" textDecoration={"none"} p={["1","3"]} borderRadius={5}  fontSize={["0.8rem","1.3rem"]} 
+            <ChakraLink color="white" textDecoration={"none"} p={["1","3"]} borderRadius={5}  fontSize={["0.8rem","1.1rem"]} 
              _hover={{
             textDecoration: "none",
             bg: "orange.800",
-            }} fontWeight="semibold" {...rest}
+            }}  {...rest}
             >
                 {children}
             </ChakraLink>
@@ -28,11 +28,11 @@ export const NavLink = ({href, children, ...rest}:NavLinkProps) => {
     } else {
         return (
             <ActiveLink href={`${href}`} passHref>
-                <ChakraLink textDecoration={"none"} p={["1","3"]} color="white" borderRadius={5}  fontSize={["0.8rem","1.3rem"]} 
+                <ChakraLink textDecoration={"none"} p={["1","3"]} color="white" borderRadius={5}  fontSize={["0.8rem","1.1rem"]} 
                  _hover={{
                 textDecoration: "none",
                 bg: "orange.500",
-                }} fontWeight="semibold" {...rest}
+                }}  {...rest}
                 >
                     {children}
                 </ChakraLink>

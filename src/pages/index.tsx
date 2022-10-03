@@ -5,7 +5,7 @@ import Aos from 'aos';
 import { Box, Image as ChakraImage, Flex, Icon, SimpleGrid, Text, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
 import { BoxContent } from "../components/BoxContent";
 import Head from 'next/head';
-import { BsPhoneFill, BsFillShieldFill, BsBatteryCharging } from 'react-icons/bs';
+import { BsPhoneFill, BsFillShieldFill, BsBatteryCharging, BsFillCheckCircleFill } from 'react-icons/bs';
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -103,7 +103,7 @@ export default function Home() {
           
           <BoxContent width="100%" dataAos='fade-up'>
             <Flex justify="center" flexDirection="column" maxW="1440px" w="100%" mx="auto">
-                <TextTitle content="Limpeza automatizada que traz mais eficiência energética" />
+                <TextTitle content="Limpeza automatizada trazendo eficiência energética" />
 
                 <Box>
 
@@ -176,7 +176,7 @@ export default function Home() {
                       textAlign="center"
                       mt="5"
                       >Conforto e praticidade</Text>
-                      <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                      <Text as="p" p="4"  color="gray.500" 
                       >
                         Alinhados com a tecnologia e inovação, transmitimos conforto, otimização e praticidade durante a operação de limpeza das placas.
                       </Text>
@@ -210,7 +210,7 @@ export default function Home() {
                           textAlign="center"
                           >Segurança </Text>
                           
-                          <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                          <Text as="p" p="4"  color="gray.500" 
                           >
                             Nosso método de limpeza traz mais segurança pois conta com sensores que detectam as bordas das placas solares, protegendo as placas de danos durante a operação.
                         </Text>
@@ -236,12 +236,11 @@ export default function Home() {
                       textAlign="center"
                       // mt="5"
                       >Produtividade</Text>
-                      {/* <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                      {/* <Text as="p" p="4"  color="gray.500" 
                       >
                         O Robô da REL Solutions conta com sistema de carregamento solar, permitindo sua operação com duração de 8 a 10 horas de limpeza.
                       </Text> */}
-                      <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
-                      >
+                      <Text as="p" p="4"  color="gray.500"                      >
                         Nosso método de limpeza permite limpar mais placas solares em menor tempo, em operações de limpeza que podem durar de 8 a 10 horas.
                       </Text>
                   </Box>
@@ -272,10 +271,13 @@ export default function Home() {
                 <Box>
                   <SimpleGrid columns={2} mx="auto" m={["0","2","2","2","2"]} borderRadius={10} p={["0","5","5","5","5"]} spacing={5}
                   opacity={1} minChildWidth="250px">
-                    <Box data-aos={isMobileVersion ? 'zoom-in-up' : 'fade-up-right'}>
-                        <TextTitle content="Entre em contato e agende a sua limpeza conosco" />
-                        <TextContent content="Colaboradores disponíveis em horário comercial com cotações acessíveis para sua empresa!" />
-                        <TextContent content="Não perca tempo e garanto um cuidado eficaz e seguro para suas placas solares!" />
+                    <Box data-aos={isMobileVersion ? 'zoom-in-up' : 'fade-up-right'} p="4">
+                        <TextTitle content="Entre em contato!" />
+                        <TextContent justify content="Agende a sua limpeza segura com nossa equipe." />
+                        <TextContent justify content="Colaboradores disponíveis em horário comercial com cotações acessíveis para sua empresa!" />
+                        <TextContent justify content="Não perca tempo e garanto um cuidado eficaz e seguro para suas placas solares!" />
+
+                        <Icon as={BsFillCheckCircleFill} fontSize="5rem" color="orange.700" mt="3rem"/>
 
                     </Box>
                     <Box my="auto" data-aos={isMobileVersion ? 'zoom-in-out' : 'fade-up-left'}>

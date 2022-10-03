@@ -42,7 +42,7 @@ export const Contact = () => {
                     <Text as="h2" fontSize="1.5rem" fontWeight={"bold"}
                     mb="3"
                     >Solicite um orçamento</Text>
-                    <FormControl maxW={["280px","300px", "310px", "400px"]} mx="auto" mt="4">
+                    <FormControl maxW={["280px","300px", "310px", "500px"]} mx="auto" mt="4">
                             <Stack spacing="6">
                                 <Box>
                                     <FormLabel htmlFor='name'>Nome</FormLabel>

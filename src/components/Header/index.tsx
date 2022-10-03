@@ -70,7 +70,7 @@ export const Header = () => {
                     align="center"
                     justify="space-between"            
                     >
-                        <Logo height="100px" width="100px"/>
+                        <Logo height="85px" width="85px"/>
                         <Flex>
         
                             <NavOptions />

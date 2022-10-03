@@ -14,7 +14,7 @@ export const TextTitle = ({content, textWhite}: TextTitleProps) => {
         
     } else {
         return (
-            <Text mx={["0","4","4","4","4","4"]} my="2rem" fontSize={["1.9rem","2rem","2.5rem"]} fontWeight="bold" textAlign="center" color="orange.600"  >{content}</Text>
+            <Text mx={["0","2"]} my="2rem" fontSize={["1.9rem","2rem","2.5rem"]} fontWeight="bold" color="orange.600"  >{content}</Text>
         );
     }
 }

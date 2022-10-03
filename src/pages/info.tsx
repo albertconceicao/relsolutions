@@ -62,7 +62,7 @@ export default function Info () {
                             textAlign="center"
                             mt="5"
                             >Nossa missão</Text>
-                            <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            <Text as="p" p="4"  color="gray.500"
                             >
                                 Nossa missão é desenvolver, buscar e aperfeiçoar metodologias tecnológicas, oferecendo maior agilidade e eficiência em nossos serviços, proporcionando  uma experiência única, sustentável e segura.
                             </Text>
@@ -94,7 +94,7 @@ export default function Info () {
                                 textAlign="center"
                                 >Nossa Visão </Text>
                                 
-                                <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                                <Text as="p" p="4"  color="gray.500"
                                 >
                                 Oferecer  soluções tecnológicas agregadas aos nossos serviços, solucionando as demandas diárias e repetitivas, trazendo um impacto positivo para nossos clientes e a sociedade.
                                 </Text>
@@ -118,11 +118,11 @@ export default function Info () {
                             textAlign="center"
                             // mt="5"
                             >Nossos Valores</Text>
-                            {/* <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            {/* <Text as="p" p="4"  color="gray.500"
                             >
                                 O Robô da REL Solutions conta com sistema de carregamento solar, permitindo sua operação com duração de 8 a 10 horas de limpeza.
                             </Text> */}
-                            <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            <Text as="p" p="4"  color="gray.500"
                             >
                                 Respeito ao cliente, zelo pelas pessoas que contribuem para o crescimento e desenvolvimento da REL Solutions, busca de soluções tecnológicas  de forma a aprimorar processos, tendo como prioridade a excelência no suporte e atendimento aos nossos clientes.
                             </Text>
@@ -158,7 +158,7 @@ export default function Info () {
                             textAlign="center"
                             mt="5"
                             >Limpeza de placa solar</Text>
-                            <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            <Text as="p" p="4"  color="gray.500"
                             >
                                 Limpeza automatizada, segura, eficiente e otimizada de placas solares de prédios, parques, residências e indústrias que utilizam as placas solares para reter energia.
                             </Text>
@@ -192,7 +192,7 @@ export default function Info () {
                                 textAlign="center"
                                 >Instalação de placa solar </Text>
                                 
-                                <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                                <Text as="p" p="4"  color="gray.500"
                                 >
                                 Instalações certificadas e padronizadas, com profissionais treinados, regulamentados e com as exigências de segurança para a realização dos serviços.
                                 </Text>
@@ -216,11 +216,11 @@ export default function Info () {
                             textAlign="center"
                             // mt="5"
                             >Limpeza e Manutenção predial</Text>
-                            {/* <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            {/* <Text as="p" p="4"  color="gray.500"
                             >
                                 O Robô da REL Solutions conta com sistema de carregamento solar, permitindo sua operação com duração de 8 a 10 horas de limpeza.
                             </Text> */}
-                            <Text as="p" p="4"  color="gray.500" fontSize={["1.1rem"]}
+                            <Text as="p" p="4"  color="gray.500"
                             >
                                 Limpezas e serviços prediais, visando a excelência, rapidez e sustentabilidade do serviço, de acordo com as necessidades dos clientes.
                             </Text>
