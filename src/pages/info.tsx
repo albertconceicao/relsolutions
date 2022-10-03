@@ -222,7 +222,7 @@ export default function Info () {
                             </Text> */}
                             <Text as="p" p="4"  color="gray.500"
                             >
-                                Limpezas e serviços prediais, visando a excelência, rapidez e sustentabilidade do serviço, de acordo com as necessidades dos clientes.
+                                Limpezas e serviços prediais, visando a excelência, rapidez e sustentabilidade do serviço, de acordo com as necessidades e demandas apresentadas pelos clientes.
                             </Text>
                         </Box>
                         <Box mx="auto" my="auto">

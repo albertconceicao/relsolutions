@@ -58,7 +58,7 @@ export const Header = () => {
         return (
             <>
             
-                <Box bg="orange.400" h="7.3rem" pos="fixed" w="100%" top="0" right="0" left="0" zIndex={999}>
+                <Box bg="orange.400" h="7.3rem" pos="fixed" w="100%" top="0" right="0" left="0" zIndex={999} boxShadow="lg">
         
                     <Flex
                     as="header"

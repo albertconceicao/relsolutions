@@ -178,7 +178,7 @@ export default function Home() {
                       >Conforto e praticidade</Text>
                       <Text as="p" p="4"  color="gray.500" 
                       >
-                        Alinhados com a tecnologia e inovação, transmitimos conforto, otimização e praticidade durante a operação de limpeza das placas.
+                        Alinhados com a tecnologia e inovação, transmitimos conforto, otimização e praticidade, por meio de dispositivos móveis, utilizados durante a operação de limpeza das placas.
                       </Text>
                   </Box>
                   <Box mx="auto" my="auto">
@@ -241,7 +241,7 @@ export default function Home() {
                         O Robô da REL Solutions conta com sistema de carregamento solar, permitindo sua operação com duração de 8 a 10 horas de limpeza.
                       </Text> */}
                       <Text as="p" p="4"  color="gray.500"                      >
-                        Nosso método de limpeza permite limpar mais placas solares em menor tempo, em operações de limpeza que podem durar de 8 a 10 horas.
+                        Nosso método de limpeza permite limpar mais placas solares em menor tempo, em operações contínuas de limpeza que podem durar de 8 a 10 horas.
                       </Text>
                   </Box>
                   <Box mx="auto" my="auto">
