@@ -32,11 +32,11 @@ export const Introduction = () => {
   
               
               <Box w="100%" my="auto">
-                <Text as="h1" color="orange.600"  w="100%" fontSize={["1.2rem","1.8rem","2rem","2.7rem"]} fontWeight="bold" textAlign="left" maxH="200px">
+                <Text as="h1" color="orange.600"  w="100%" fontSize={["1.7rem","2rem","2.7rem"]} fontWeight="bold" textAlign="center" maxH="200px" >
                   Automatize sua limpeza
                 </Text>
               
-                <Text  as="p"  textAlign={["left", "justify"]} mt="4rem" fontSize={["1.1rem"]} w="100%" ml="auto"> 
+                <Text  as="p"  textAlign={["justify"]} mt="4rem" fontSize={["1.1rem"]} w="100%"> 
                   A REL Solutions apresenta uma solução que atende as necessidades de uma limpeza eficaz, rápida e segura para suas placas solares.
                 </Text>
                
