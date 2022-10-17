@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { Box, Flex, Icon, ListItem, SimpleGrid, Text, UnorderedList, useBreakpointValue } from "@chakra-ui/react";
 import { GiCutDiamond } from "react-icons/gi";
 import { FiTarget } from "react-icons/fi";
@@ -8,6 +10,8 @@ import { BoxContent } from "../components/BoxContent";
 import { TextTitle } from "../components/TextTitle";
 import { TextContent } from "../components/TextContent";
 import { Footer } from "../components/Footer";
+
+import Aos from 'aos';
 
 
 export default function Info () {
@@ -20,7 +24,11 @@ export default function Info () {
         lg: false
     })
 
-    
+    useEffect(() => {
+        Aos.init({
+          duration: 1500,
+        });
+      },[])
     
         return (
             <>

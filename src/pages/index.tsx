@@ -63,7 +63,6 @@ export default function Home() {
       base: true,
       lg: false
     })
-    console.log(isMobileVersion);
     
     const handleSubmitEmail = async (e) => {
 
