@@ -38,7 +38,7 @@ O site foi desenvolvido de forma responsiva, para ser acessível por dispositivo
 
 ![Responsivo 1](https://github.com/albertconceicao/assets/blob/main/relsolutions/mobile-1.jpeg)
 ![Responsivo 2](https://github.com/albertconceicao/assets/blob/main/relsolutions/mobile-2.jpeg)
-![Responsivo 3](https://github.com/albertconceicao/assets/blob/main/relsolutions/mobile-3.jpeg)
+![Responsivo 3](https://github.com/albertconceicao/assets/blob/main/relsolutions/mobile-3.png)
 ![Responsivo 4](https://github.com/albertconceicao/assets/blob/main/relsolutions/mobile-4.jpeg)
 
 
