@@ -1,34 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# REL Solutions
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/albertconceicao/relsolutions/blob/main/LICENSE) 
 
-## Getting Started
+# Sobre o projeto
 
-First, run the development server:
+https://relsolutions.com.br
+
+O site da REL Solutions foi desenvolvido, para que a empresa pudesse ser encontrada na Web, tendo como objetivos apresentar os serviços prestados, vídeo sobre o método de limpeza, além da Missão, Visão e Valores.
+
+O site consiste em duas páginas, desenvolvido em Next.js para poder gerar os conteúdos utilizando o conceito de SSR (Server Side Rendering) além também de poder utilizar a própria API do Next.js para fazer a requisição de envio do formulário de contato.
+
+Ele contém duas páginas, a primeira chamado Home, e a segunda chamada Quem Somos. 
+
+Foi utilizado conceitos de SEO e boas práticas no desenvolvimento.
+
+## Página Home
+
+![Home 1](https://github.com/albertconceicao/assets/blob/main/relsolutions/home-1.jpeg) 
+![Home 2](https://github.com/albertconceicao/assets/blob/main/relsolutions/home-2.jpeg)
+![Home 3](https://github.com/albertconceicao/assets/blob/main/relsolutions/home-3.jpeg)
+![Home 4](https://github.com/albertconceicao/assets/blob/main/relsolutions/home-4.jpeg)
+![Home 5](https://github.com/albertconceicao/assets/blob/main/relsolutions/home-5.jpeg)
+![Home 6](https://github.com/albertconceicao/assets/blob/main/relsolutions/home-6.jpeg)
+
+## Pagina Quem somos
+
+![Sobre 1](https://github.com/albertconceicao/assets/blob/main/relsolutions/about-1.jpeg) 
+![Sobre 2](https://github.com/albertconceicao/assets/blob/main/relsolutions/about-2.jpeg) 
+![Sobre 3](https://github.com/albertconceicao/assets/blob/main/relsolutions/about-3.jpeg) 
+![Sobre 4](https://github.com/albertconceicao/assets/blob/main/relsolutions/about-4.jpeg) 
+![Sobre 5](https://github.com/albertconceicao/assets/blob/main/relsolutions/about-5.jpeg) 
+![Sobre 6](https://github.com/albertconceicao/assets/blob/main/relsolutions/about-6.jpeg) 
+
+## Responsivo
+
+O site foi desenvolvido de forma responsiva, para ser acessível por dispositivos móveis como Smartphones e tablets.
+
+
+![Responsivo 1](https://github.com/albertconceicao/assets/blob/main/relsolutions/mobile-1.jpeg)
+![Responsivo 2](https://github.com/albertconceicao/assets/blob/main/relsolutions/mobile-2.jpeg)
+![Responsivo 3](https://github.com/albertconceicao/assets/blob/main/relsolutions/mobile-3.png)
+![Responsivo 4](https://github.com/albertconceicao/assets/blob/main/relsolutions/mobile-4.jpeg)
+
+
+
+# Tecnologias utilizadas
+
+## Back end
+- Node.js dentro do Next, utilizando a pasta API dentro da pasta pages
+- Nodemailer para envio do formulário de contato via protocolo SMTP
+
+## Front end
+- React.js
+- Next.js
+- HTML / CSS / JS / TypeScript
+- ChakraUI
+
+## Implantação em produção
+- Front end web: Netlify
+
+# Como executar o projeto
+
+
+## Front end web
+Pré-requisitos: npm / yarn
 
 ```bash
-npm run dev
-# or
+# clonar repositório
+git clone https://github.com/albertconceicao/relsolutions
+# entrar na pasta do projeto relsolutions
+cd relsolutions
+# instalar dependências
+yarn install
+# executar o projeto
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Autor
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Albert Vinicius Pereira Conceição
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://www.linkedin.com/in/albertconceicao
