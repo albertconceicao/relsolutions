@@ -64,6 +64,10 @@ O site foi desenvolvido de forma responsiva, para ser acessível por dispositivo
 ## Front end web
 Pré-requisitos: npm / yarn
 
+## Features
+
+Envio de formulário via protocolo SMTP para o endereço de e-mail contratado pelo cliente.
+
 ```bash
 # clonar repositório
 git clone https://github.com/albertconceicao/relsolutions
@@ -74,6 +78,11 @@ yarn install
 # executar o projeto
 yarn dev
 ```
+
+# Agradecimentos
+
+Agradeço a Rocketseat por proporcionar, por meio, do programa Ignite, o conhecimento necessário para realizar o Desenvolvimento deste site. 
+Agradeço também à empresa REL Solutions por confiar em meus serviços ao realizar a contratação para o Desenvolvimento desse projeto.
 
 # Autor
 
