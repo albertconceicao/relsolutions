@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-https://relsolutions.com.br
+https://www.relsolutions.com.br/
 
 O site da REL Solutions foi desenvolvido, para que a empresa pudesse ser encontrada na Web, tendo como objetivos apresentar os serviços prestados, vídeo sobre o método de limpeza, além da Missão, Visão e Valores.
 
