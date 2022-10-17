@@ -12,7 +12,7 @@ import { TextContent } from "../components/TextContent";
 import { Footer } from "../components/Footer";
 
 import Aos from 'aos';
-
+import 'aos/dist/aos.css'
 
 export default function Info () {
     const isWideVersion = useBreakpointValue({
