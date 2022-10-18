@@ -101,7 +101,7 @@ export const Contact = () => {
                 </Box>
                 {/* <BoxContent width="600px" height="580px">
                 </BoxContent> */}
-                <ToastContainer />
+                
         </Stack>
     );
 }

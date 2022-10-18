@@ -73,7 +73,7 @@ export const Footer = () => {
                 </Flex>
             </Flex>
             <Flex direction={"column"} textTransform={"capitalize"} fontWeight={"600"} my="20px">
-                <Text mx="auto" as="small" >Desenvolvido por <Text as="strong" color="orange.600" >Concept Solutions</Text ></Text>
+                <Text mx="auto" as="small" >Desenvolvido por <Text as="strong" color="orange.600" >Albert Conceição</Text ></Text>
             </Flex>
         </Box>
     );

@@ -31,7 +31,7 @@ import {
 } from 'swiper';
 import { useState } from "react";
 import 'react-toastify/dist/ReactToastify.css';
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import { Introduction } from "../components/Introduction";
 import { TextTitle } from "../components/TextTitle";
 import { TextContent } from "../components/TextContent";
@@ -291,6 +291,7 @@ export default function Home() {
         <Footer />
         </Flex>
       </Box>
+      <ToastContainer />
     </>
     
   )
